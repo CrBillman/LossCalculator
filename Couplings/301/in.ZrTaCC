@@ -1,0 +1,52 @@
+# Tantala heating to find melting temp. and glass transition temp.
+# Intervals of 400 K (starting at 0 K) to be merged with the date from the even directory (also has intervals of 400 K starting at 200 K)
+# Including rdf compute and initial velocity seed
+# I've written a loop that makes melting/cooling simulation codes less tedious (In test directory input file) 
+
+# Initialization
+
+units		metal	
+atom_style	charge
+dimension	3
+boundary	p p p
+
+# Optional 
+
+neighbor	1.0 nsq
+neigh_modify	every 1 delay 1 check yes
+
+# Defining atomic system (896 atoms)
+
+read_data	min1.dat
+
+# Potential
+
+kspace_style	ewald 1.0e-8
+#For low-temperature simulations, comment out the following line
+#pair_style	hybrid/overlay lj246/cut 10 buck/coul/long 10 morse 10 
+#For low-temperature simulations, un-comment the following line
+pair_style      hybrid/overlay buck/coul/long 10 morse 10
+
+pair_coeff      1 2 buck/coul/long 100067.01 0.1319 6.05
+pair_coeff      2 2 buck/coul/long 1388.773 0.3623188 175.0000
+pair_coeff      1 1 buck/coul/long 0.00000000 1.0000000 0.000000
+pair_coeff	2 3 buck/coul/long 17243.00 0.2265 128.35
+pair_coeff      1 3 buck/coul/long 0.00000000 1.0000000 0.000000
+pair_coeff      3 3 buck/coul/long 0.00000000 1.0000000 0.000000
+pair_coeff 	1 2 morse 	   0.3789 1.6254 2.5445
+#Remove these lines if running low-temperature simulation
+#pair_coeff      1 2 lj246/cut	   0.01 0.51
+#pair_coeff	2 2 lj246/cut 	   0.00035653 1.9000
+
+# MD parameters
+
+#1 fs timestep
+timestep 0.001
+thermo		50
+
+fix		1 all nvt temp 10 10 0.1
+velocity	all create 10 26684
+
+load_tls min1.dump 1 0
+load_tls min2.dump 2 0
+couple_elastic 0.005 linear

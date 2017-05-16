@@ -1,0 +1,2783 @@
+
+                    DL_POLY Version 2.20
+
+                              Running on    1 nodes
+
+
+ ************************************************************************************************************************
+ ************************************************************************************************************************
+ ************************************************************************************************************************
+ ***************     Silica Barrier Search Simulation                                                     ***************
+ ************************************************************************************************************************
+ ************************************************************************************************************************
+ ************************************************************************************************************************
+
+
+ SIMULATION CONTROL PARAMETERS
+
+
+ velocity verlet integration selected
+
+ simulation temperature           1.0000E+03
+
+ simulation pressure (katm)       1.0000E-03
+
+ non-local ridge method requested
+
+ selected number of timesteps      1000000
+
+ equilibration period                39999
+
+ simulation timestep              5.0000E-04
+
+ real space cut off               1.0000E+01
+
+ border width of Verlet shell     2.0000E+00
+
+ data printing interval                  5
+
+ user allocated job time (s)      6.0000E+05
+
+ job closure time        (s)      2.0000E+02
+
+ tolerance for SHAKE              1.0000E-05
+
+ tolerance for Quaternions        1.0000E-07
+
+ Ewald sum  precision             1.0000E-08
+
+ Electrostatics : Ewald sum  
+
+ Ewald convergence parameter      3.8377E-01
+ Ewald kmax1 kmax2 kmax3        11   11   11
+
+ Nose-Hoover 
+ thermostat relaxation time       2.0000E-01
+
+
+SYSTEM SPECIFICATION
+
+ energy units=electron volts 
+
+
+ number of molecular types               3
+
+ molecular species type                  1
+
+
+ name of species:             Tantalum                                
+
+ number of molecules                   222
+
+ number of atoms/sites                   1
+
+
+ atomic characteristics:
+
+                      site     name          mass        charge    repeat    freeze
+
+                         1     TA         180.95000     3.00000         1         0
+
+ molecular species type                  2
+
+
+ name of species:             Oxygen                                  
+
+ number of molecules                   709
+
+ number of atoms/sites                   1
+
+
+ atomic characteristics:
+
+                      site     name          mass        charge    repeat    freeze
+
+                         2     O           15.99940    -1.20000         1         0
+
+ molecular species type                  3
+
+
+ name of species:             Zirconium                               
+
+ number of molecules                    77
+
+ number of atoms/sites                   1
+
+
+ atomic characteristics:
+
+                      site     name          mass        charge    repeat    freeze
+
+                         3     ZR          91.22000     2.40000         1         0
+
+
+ number of specified pair potentials         3
+
+
+                atom 1  atom 2      key                              parameters
+
+
+                TA      O         jon      1.00067E+05  1.31905E-01  6.04770E+00  3.78980E-01  2.54450E+00  1.62530E+00
+                O       O         buck     1.38870E+03  3.62320E-01  1.75000E+02
+                ZR      O         buck     1.72430E+04  2.26500E-01  1.28350E+02
+
+  *** warning - undefined atom-atom interactions set to zero ***
+   0.9649E+04
+
+ configuration file name: 
+
+           CELL_PARAMETERS                                                                
+
+
+ selected image convention               3
+
+
+ simulation cell vectors
+
+
+                        23.300680    0.000000    0.000000
+                         0.000000   23.300680    0.000000
+                         0.000000    0.000000   23.300680
+
+
+ system volume            12650.4447894    
+
+
+ total degrees of freedom                      3021.
+ rotational degrees of freedom                    0.
+ shell pseudo degrees of freedom                  0.
+
+
+ sample of starting configuration
+
+      i       x(i)        y(i)        z(i)       vx(i)       vy(i)       vz(i)
+
+
+      1  3.7654E+00 -6.8521E+00 -7.6541E+00  0.0000E+00  0.0000E+00  0.0000E+00
+     52 -1.0993E+01 -5.4319E-01 -9.5284E-01  0.0000E+00  0.0000E+00  0.0000E+00
+    103  4.1488E-01 -9.8067E+00  7.3393E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    154  5.1455E+00  7.0685E+00 -6.8898E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    205 -6.6833E+00  2.7159E+00  7.9789E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    256 -6.9884E+00  1.0489E+01  1.8594E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    307 -2.5651E+00  3.7373E+00  3.4201E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    358  2.0497E+00 -1.8345E+00 -4.4597E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    409  5.1585E+00 -5.7853E+00  1.0816E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    460 -2.0207E+00 -5.5286E+00  7.6312E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    511  1.0940E+01 -7.3730E-01  1.4445E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    562  1.0275E+01  8.7010E+00 -6.1754E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    613  9.4155E+00 -7.1394E+00  5.2156E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    664  1.9406E+00  6.0402E+00 -9.6780E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    715 -5.7405E-01  2.4801E+00 -2.9777E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    766  9.2941E+00 -8.5821E+00  1.1025E+01  0.0000E+00  0.0000E+00  0.0000E+00
+    817 -3.5629E+00  6.0658E+00  3.0910E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    868  4.8151E+00 -5.1526E-01 -7.7595E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    919  1.2481E+00 -9.0309E+00  3.6530E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    970 -1.0765E+01 -1.7005E+00  2.5511E+00  0.0000E+00  0.0000E+00  0.0000E+00
+
+
+long range correction for: vdw energy    -0.168842E+02
+                         : vdw pressure  -0.422085E+01
+
+ time elapsed since job start =           0.008 seconds
+
+ ------------------------------------------------------------------------------------------------------------------------
+  coupling constant calculations      
+
+       1      21
+
+ time elapsed since job start =           0.013 seconds
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.32706137010869E-04
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.7959E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE    0.04291720212075    0.00000000000000    0.00000000000000
+    0.00000000000000    0.04291720212075    0.00000000000000
+    0.00000000000000    0.00000000000000    0.04291720212075
+   23.18417675971985    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291186489038E+05    0.16088707554678E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.9510E-05
+final energy =     -0.182913386686E+05
+
+relaxtion performed
+
+finial energy-.18291338668596E+05
+
+BYE, BYE         1 -0.182913386686E+05
+   23.19582709980011    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291197494558E+05    0.14438863047290E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   117    0.9721E-05
+final energy =     -0.182913197527E+05
+
+relaxtion performed
+
+finial energy-.18291319752691E+05
+
+BYE, BYE         2 -0.182913197527E+05
+   23.20747743988037    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291202288461E+05    0.12799648515989E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.8369E-05
+final energy =     -0.182912979635E+05
+
+relaxtion performed
+
+finial energy-.18291297963471E+05
+
+BYE, BYE         3 -0.182912979635E+05
+   23.21912777996063    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291197158653E+05    0.11169379057114E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   117    0.9340E-05
+final energy =     -0.182912716639E+05
+
+relaxtion performed
+
+finial energy-.18291271663896E+05
+
+BYE, BYE         4 -0.182912716639E+05
+   23.23077812004089    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291182882575E+05    0.95478357910275E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.9151E-05
+final energy =     -0.182912398512E+05
+
+relaxtion performed
+
+finial energy-.18291239851154E+05
+
+BYE, BYE         5 -0.182912398512E+05
+   23.24242846012115    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291164272497E+05    0.79349411581985E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.9972E-05
+final energy =     -0.182912028874E+05
+
+relaxtion performed
+
+finial energy-.18291202887363E+05
+
+BYE, BYE         6 -0.182912028874E+05
+   23.25407880020142    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291136483984E+05    0.63307063781333E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   163    0.9971E-05
+final energy =     -0.182911620474E+05
+
+relaxtion performed
+
+finial energy-.18291162047405E+05
+
+BYE, BYE         7 -0.182911620474E+05
+   23.26572914028168    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291101325630E+05    0.47350895255901E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   106    0.9590E-05
+final energy =     -0.182911168974E+05
+
+relaxtion performed
+
+finial energy-.18291116897427E+05
+
+BYE, BYE         8 -0.182911168974E+05
+   23.27737948036194    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291061241809E+05    0.31480778972873E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    98    0.8436E-05
+final energy =     -0.182910662622E+05
+
+relaxtion performed
+
+finial energy-.18291066262173E+05
+
+BYE, BYE         9 -0.182910662622E+05
+   23.28902982044220    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291011031790E+05    0.15697474668234E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    90    0.8134E-05
+final energy =     -0.182910129117E+05
+
+relaxtion performed
+
+finial energy-.18291012911699E+05
+
+BYE, BYE        10 -0.182910129117E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.79587111500720E-05
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.9474E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE        11 -0.182909560862E+05
+   23.31233050060272    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290892829212E+05    0.15610719347552E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    89    0.8940E-05
+final energy =     -0.182908955337E+05
+
+relaxtion performed
+
+finial energy-.18290895533668E+05
+
+BYE, BYE        12 -0.182908955337E+05
+   23.32398084068299    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290823345726E+05    0.31127355839089E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    97    0.7586E-05
+final energy =     -0.182908286564E+05
+
+relaxtion performed
+
+finial energy-.18290828656364E+05
+
+BYE, BYE        13 -0.182908286564E+05
+   23.33563118076324    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290744203173E+05    0.46564170419242E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   102    0.9591E-05
+final energy =     -0.182907588422E+05
+
+relaxtion performed
+
+finial energy-.18290758842154E+05
+
+BYE, BYE        14 -0.182907588422E+05
+   23.34728152084351    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290655012306E+05    0.61905458521496E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.8914E-05
+final energy =     -0.182906826900E+05
+
+relaxtion performed
+
+finial energy-.18290682690037E+05
+
+BYE, BYE        15 -0.182906826900E+05
+   23.35893186092377    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290561962424E+05    0.77169274370564E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.9730E-05
+final energy =     -0.182906015971E+05
+
+relaxtion performed
+
+finial energy-.18290601597113E+05
+
+BYE, BYE        16 -0.182906015971E+05
+   23.37058220100403    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290460558437E+05    0.92349954044174E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   119    0.9763E-05
+final energy =     -0.182905181602E+05
+
+relaxtion performed
+
+finial energy-.18290518160185E+05
+
+BYE, BYE        17 -0.182905181602E+05
+   23.38223254108429    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290351307372E+05    0.10744833610550E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.8426E-05
+final energy =     -0.182904298741E+05
+
+relaxtion performed
+
+finial energy-.18290429874056E+05
+
+BYE, BYE        18 -0.182904298741E+05
+   23.39388288116455    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290236955918E+05    0.12246426859997E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.8915E-05
+final energy =     -0.182903388162E+05
+
+relaxtion performed
+
+finial energy-.18290338816230E+05
+
+BYE, BYE        19 -0.182903388162E+05
+   23.40553322124481    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290113442611E+05    0.13739757650613E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   115    0.8283E-05
+final energy =     -0.182902403294E+05
+
+relaxtion performed
+
+finial energy-.18290240329357E+05
+
+BYE, BYE        20 -0.182902403294E+05
+   23.41718356132507    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18289981597579E+05    0.15224834380540E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   117    0.7840E-05
+final energy =     -0.182901396299E+05
+
+relaxtion performed
+
+finial energy-.18290139629928E+05
+
+BYE, BYE        21 -0.182901396299E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.18417675971985    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291104080003E+05    0.17467614379768E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   115    0.8746E-05
+final energy =     -0.182912504921E+05
+
+relaxtion performed
+
+finial energy-.18291250492078E+05
+
+BYE, BYE         1 -0.182912504921E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.19582709980011    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291123596895E+05    0.15679044388515E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   117    0.8175E-05
+final energy =     -0.182912420892E+05
+
+relaxtion performed
+
+finial energy-.18291242089176E+05
+
+BYE, BYE         2 -0.182912420892E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.20747743988037    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291136848484E+05    0.13899760652371E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   114    0.8579E-05
+final energy =     -0.182912295391E+05
+
+relaxtion performed
+
+finial energy-.18291229539100E+05
+
+BYE, BYE         3 -0.182912295391E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.21912777996063    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291141454698E+05    0.12129702106278E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   113    0.9461E-05
+final energy =     -0.182912124619E+05
+
+relaxtion performed
+
+finial energy-.18291212461855E+05
+
+BYE, BYE         4 -0.182912124619E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.23077812004089    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291140275117E+05    0.10368854069342E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.9170E-05
+final energy =     -0.182911911023E+05
+
+relaxtion performed
+
+finial energy-.18291191102250E+05
+
+BYE, BYE         5 -0.182911911023E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.24242846012115    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291129757496E+05    0.86171909637337E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   105    0.9889E-05
+final energy =     -0.182911663610E+05
+
+relaxtion performed
+
+finial energy-.18291166361040E+05
+
+BYE, BYE         6 -0.182911663610E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.25407880020142    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291109821148E+05    0.68747687858308E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   104    0.8102E-05
+final energy =     -0.182911333663E+05
+
+relaxtion performed
+
+finial energy-.18291133366339E+05
+
+BYE, BYE         7 -0.182911333663E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.26572914028168    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291084559935E+05    0.51426189989171E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    99    0.9947E-05
+final energy =     -0.182910967726E+05
+
+relaxtion performed
+
+finial energy-.18291096772568E+05
+
+BYE, BYE         8 -0.182910967726E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.27737948036194    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291049167280E+05    0.34195011658320E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    97    0.8302E-05
+final energy =     -0.182910541047E+05
+
+relaxtion performed
+
+finial energy-.18291054104712E+05
+
+BYE, BYE         9 -0.182910541047E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.28902982044220    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291006848019E+05    0.17053076897721E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    86    0.7854E-05
+final energy =     -0.182910075779E+05
+
+relaxtion performed
+
+finial energy-.18291007577903E+05
+
+BYE, BYE        10 -0.182910075779E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.79587111500720E-05
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.9474E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE        11 -0.182909560862E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.31233050060272    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290901484364E+05    0.16963229863659E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    84    0.9225E-05
+final energy =     -0.182909019221E+05
+
+relaxtion performed
+
+finial energy-.18290901922088E+05
+
+BYE, BYE        12 -0.182909019221E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.32398084068299    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290838731995E+05    0.33763931784425E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    95    0.9866E-05
+final energy =     -0.182908433673E+05
+
+relaxtion performed
+
+finial energy-.18290843367294E+05
+
+BYE, BYE        13 -0.182908433673E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.33563118076324    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290766088841E+05    0.50549232606949E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   101    0.9139E-05
+final energy =     -0.182907781455E+05
+
+relaxtion performed
+
+finial energy-.18290778145550E+05
+
+BYE, BYE        14 -0.182907781455E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.34728152084351    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290688318669E+05    0.67245616533873E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   101    0.9469E-05
+final energy =     -0.182907106890E+05
+
+relaxtion performed
+
+finial energy-.18290710688959E+05
+
+BYE, BYE        15 -0.182907106890E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.35893186092377    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290602254523E+05    0.83853648207018E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   105    0.9926E-05
+final energy =     -0.182906399516E+05
+
+relaxtion performed
+
+finial energy-.18290639951617E+05
+
+BYE, BYE        16 -0.182906399516E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.37058220100403    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290511182850E+05    0.10037377499459E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   109    0.8963E-05
+final energy =     -0.182905635462E+05
+
+relaxtion performed
+
+finial energy-.18290563546232E+05
+
+BYE, BYE        17 -0.182905635462E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.38223254108429    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290409712620E+05    0.11680445057971E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   115    0.8944E-05
+final energy =     -0.182904809162E+05
+
+relaxtion performed
+
+finial energy-.18290480916184E+05
+
+BYE, BYE        18 -0.182904809162E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.39388288116455    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290303392183E+05    0.13314179783066E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   111    0.9909E-05
+final energy =     -0.182903954599E+05
+
+relaxtion performed
+
+finial energy-.18290395459947E+05
+
+BYE, BYE        19 -0.182903954599E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.40553322124481    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290189423882E+05    0.14938704928640E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   109    0.9914E-05
+final energy =     -0.182903030859E+05
+
+relaxtion performed
+
+finial energy-.18290303085866E+05
+
+BYE, BYE        20 -0.182903030859E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.41718356132507    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290067367540E+05    0.16554662894848E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   113    0.8253E-05
+final energy =     -0.182902076196E+05
+
+relaxtion performed
+
+finial energy-.18290207619570E+05
+
+BYE, BYE        21 -0.182902076196E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.18417675971985
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291123307119E+05    0.15631584996367E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   210    0.9809E-05
+final energy =     -0.182912979682E+05
+
+relaxtion performed
+
+finial energy-.18291297968162E+05
+
+BYE, BYE         1 -0.182912979682E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.19582709980011
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291140150831E+05    0.14028405832546E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   258    0.9682E-05
+final energy =     -0.182912836754E+05
+
+relaxtion performed
+
+finial energy-.18291283675370E+05
+
+BYE, BYE         2 -0.182912836754E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.20747743988037
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291150353858E+05    0.12434128322910E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   272    0.8712E-05
+final energy =     -0.182912619949E+05
+
+relaxtion performed
+
+finial energy-.18291261994921E+05
+
+BYE, BYE         3 -0.182912619949E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.21912777996063
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291152752167E+05    0.10848674560381E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   222    0.8896E-05
+final energy =     -0.182912370452E+05
+
+relaxtion performed
+
+finial energy-.18291237045180E+05
+
+BYE, BYE         4 -0.182912370452E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.23077812004089
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291146269506E+05    0.92731545644804E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   127    0.8438E-05
+final energy =     -0.182912024828E+05
+
+relaxtion performed
+
+finial energy-.18291202482790E+05
+
+BYE, BYE         5 -0.182912024828E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.24242846012115
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291133510696E+05    0.77053191218242E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   113    0.9186E-05
+final energy =     -0.182911714334E+05
+
+relaxtion performed
+
+finial energy-.18291171433360E+05
+
+BYE, BYE         6 -0.182911714334E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.25407880020142
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291113656895E+05    0.61469323237250E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    99    0.9813E-05
+final energy =     -0.182911374369E+05
+
+relaxtion performed
+
+finial energy-.18291137436930E+05
+
+BYE, BYE         7 -0.182911374369E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.26572914028168
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291084898609E+05    0.45973955701808E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    97    0.9195E-05
+final energy =     -0.182911009875E+05
+
+relaxtion performed
+
+finial energy-.18291100987478E+05
+
+BYE, BYE         8 -0.182911009875E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.27737948036194
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291048016106E+05    0.30564233730695E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    90    0.9124E-05
+final energy =     -0.182910546393E+05
+
+relaxtion performed
+
+finial energy-.18291054639332E+05
+
+BYE, BYE         9 -0.182910546393E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.28902982044220
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18291006013759E+05    0.15240679163223E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    83    0.9478E-05
+final energy =     -0.182910084860E+05
+
+relaxtion performed
+
+finial energy-.18291008485986E+05
+
+BYE, BYE        10 -0.182910084860E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.79587111500720E-05
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.9474E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE        11 -0.182909560862E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.31233050060272
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290899016148E+05    0.15148555527976E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    76    0.8532E-05
+final energy =     -0.182908993737E+05
+
+relaxtion performed
+
+finial energy-.18290899373653E+05
+
+BYE, BYE        12 -0.182908993737E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.32398084068299
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290834890513E+05    0.30206385681549E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    85    0.8405E-05
+final energy =     -0.182908416377E+05
+
+relaxtion performed
+
+finial energy-.18290841637658E+05
+
+BYE, BYE        13 -0.182908416377E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.33563118076324
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290764623673E+05    0.45194990400539E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    92    0.8299E-05
+final energy =     -0.182907795564E+05
+
+relaxtion performed
+
+finial energy-.18290779556432E+05
+
+BYE, BYE        14 -0.182907795564E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.34728152084351
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290686386772E+05    0.60093914542661E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    98    0.9619E-05
+final energy =     -0.182907107370E+05
+
+relaxtion performed
+
+finial energy-.18290710736976E+05
+
+BYE, BYE        15 -0.182907107370E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.35893186092377
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290598662621E+05    0.74908444661141E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   102    0.7080E-05
+final energy =     -0.182906380941E+05
+
+relaxtion performed
+
+finial energy-.18290638094061E+05
+
+BYE, BYE        16 -0.182906380941E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.37058220100403
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290504636081E+05    0.89638220555583E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    99    0.9954E-05
+final energy =     -0.182905594699E+05
+
+relaxtion performed
+
+finial energy-.18290559469909E+05
+
+BYE, BYE        17 -0.182905594699E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.38223254108429
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290404628701E+05    0.10427871950915E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   103    0.8773E-05
+final energy =     -0.182904800562E+05
+
+relaxtion performed
+
+finial energy-.18290480056225E+05
+
+BYE, BYE        18 -0.182904800562E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.39388288116455
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290294854251E+05    0.11883528244801E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   104    0.8928E-05
+final energy =     -0.182903929643E+05
+
+relaxtion performed
+
+finial energy-.18290392964335E+05
+
+BYE, BYE        19 -0.182903929643E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.40553322124481
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290180327059E+05    0.13333227371536E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.9657E-05
+final energy =     -0.182903034328E+05
+
+relaxtion performed
+
+finial energy-.18290303432793E+05
+
+BYE, BYE        20 -0.182903034328E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.41718356132507
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290055614035E+05    0.14775659476592E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   105    0.9742E-05
+final energy =     -0.182902099937E+05
+
+relaxtion performed
+
+finial energy-.18290209993744E+05
+
+BYE, BYE        21 -0.182902099937E+05
+   23.30068016052246   -0.11650340080261    0.00000000000000
+   -0.11650340080261   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290343521793E+05    0.25697205757375E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.8738E-05
+final energy =     -0.182905843458E+05
+
+relaxtion performed
+
+finial energy-.18290584345795E+05
+
+BYE, BYE         1 -0.182905843458E+05
+   23.30068016052246   -0.10485306072235    0.00000000000000
+   -0.10485306072235   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290448650612E+05    0.23115621672489E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.8040E-05
+final energy =     -0.182906445081E+05
+
+relaxtion performed
+
+finial energy-.18290644508144E+05
+
+BYE, BYE         2 -0.182906445081E+05
+   23.30068016052246   -0.09320272064209    0.00000000000000
+   -0.09320272064209   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290545131279E+05    0.20536623652580E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   113    0.9459E-05
+final energy =     -0.182906991096E+05
+
+relaxtion performed
+
+finial energy-.18290699109646E+05
+
+BYE, BYE         3 -0.182906991096E+05
+   23.30068016052246   -0.08155238056183    0.00000000000000
+   -0.08155238056183   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290632468247E+05    0.17960237973581E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   111    0.9913E-05
+final energy =     -0.182907508527E+05
+
+relaxtion performed
+
+finial energy-.18290750852735E+05
+
+BYE, BYE         4 -0.182907508527E+05
+   23.30068016052246   -0.06990204048157    0.00000000000000
+   -0.06990204048157   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290710085522E+05    0.15386571741874E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.8643E-05
+final energy =     -0.182907950346E+05
+
+relaxtion performed
+
+finial energy-.18290795034609E+05
+
+BYE, BYE         5 -0.182907950346E+05
+   23.30068016052246   -0.05825170040131    0.00000000000000
+   -0.05825170040131   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290777111101E+05    0.12815629441562E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.7496E-05
+final energy =     -0.182908362940E+05
+
+relaxtion performed
+
+finial energy-.18290836294030E+05
+
+BYE, BYE         6 -0.182908362940E+05
+   23.30068016052246   -0.04660136032104    0.00000000000000
+   -0.04660136032104   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290833891307E+05    0.10246401911203E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   105    0.9832E-05
+final energy =     -0.182908716854E+05
+
+relaxtion performed
+
+finial energy-.18290871685436E+05
+
+BYE, BYE         7 -0.182908716854E+05
+   23.30068016052246   -0.03495102024078    0.00000000000000
+   -0.03495102024078   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290879975617E+05    0.76808187867923E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   106    0.9867E-05
+final energy =     -0.182909011348E+05
+
+relaxtion performed
+
+finial energy-.18290901134754E+05
+
+BYE, BYE         8 -0.182909011348E+05
+   23.30068016052246   -0.02330068016052    0.00000000000000
+   -0.02330068016052   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290914854395E+05    0.51178523180705E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    98    0.9170E-05
+final energy =     -0.182909254114E+05
+
+relaxtion performed
+
+finial energy-.18290925411355E+05
+
+BYE, BYE         9 -0.182909254114E+05
+   23.30068016052246   -0.01165034008026    0.00000000000000
+   -0.01165034008026   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290941291260E+05    0.25575263840345E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    93    0.7954E-05
+final energy =     -0.182909424859E+05
+
+relaxtion performed
+
+finial energy-.18290942485880E+05
+
+BYE, BYE        10 -0.182909424859E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.79587111500720E-05
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.9474E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE        11 -0.182909560862E+05
+   23.30068016052246    0.01165034008026    0.00000000000000
+    0.01165034008026   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290964811044E+05    0.25547866429614E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    88    0.8274E-05
+final energy =     -0.182909662294E+05
+
+relaxtion performed
+
+finial energy-.18290966229380E+05
+
+BYE, BYE        12 -0.182909662294E+05
+   23.30068016052246    0.02330068016052    0.00000000000000
+    0.02330068016052   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290960322673E+05    0.51068333759055E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    98    0.8699E-05
+final energy =     -0.182909705972E+05
+
+relaxtion performed
+
+finial energy-.18290970597232E+05
+
+BYE, BYE        13 -0.182909705972E+05
+   23.30068016052246    0.03495102024078    0.00000000000000
+    0.03495102024078   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290945977552E+05    0.76564658134335E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.9218E-05
+final energy =     -0.182909691031E+05
+
+relaxtion performed
+
+finial energy-.18290969103107E+05
+
+BYE, BYE        14 -0.182909691031E+05
+   23.30068016052246    0.04660136032104    0.00000000000000
+    0.04660136032104   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290922379550E+05    0.10203707848131E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   109    0.8667E-05
+final energy =     -0.182909612036E+05
+
+relaxtion performed
+
+finial energy-.18290961203558E+05
+
+BYE, BYE        15 -0.182909612036E+05
+   23.30068016052246    0.05825170040131    0.00000000000000
+    0.05825170040131   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290889855076E+05    0.12749049391518E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   118    0.9745E-05
+final energy =     -0.182909520023E+05
+
+relaxtion performed
+
+finial energy-.18290952002297E+05
+
+BYE, BYE        16 -0.182909520023E+05
+   23.30068016052246    0.06990204048157    0.00000000000000
+    0.06990204048157   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290849559773E+05    0.15292111039125E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   120    0.7700E-05
+final energy =     -0.182909352284E+05
+
+relaxtion performed
+
+finial energy-.18290935228356E+05
+
+BYE, BYE        17 -0.182909352284E+05
+   23.30068016052246    0.08155238056183    0.00000000000000
+    0.08155238056183   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290797081876E+05    0.17832883374493E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   132    0.9227E-05
+final energy =     -0.182909106355E+05
+
+relaxtion performed
+
+finial energy-.18290910635492E+05
+
+BYE, BYE        18 -0.182909106355E+05
+   23.30068016052246    0.09320272064209    0.00000000000000
+    0.09320272064209   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290733485755E+05    0.20371387681315E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   191    0.8935E-05
+final energy =     -0.182908833561E+05
+
+relaxtion performed
+
+finial energy-.18290883356077E+05
+
+BYE, BYE        19 -0.182908833561E+05
+   23.30068016052246    0.10485306072235    0.00000000000000
+    0.10485306072235   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290656519063E+05    0.22907733636980E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   196    0.9114E-05
+final energy =     -0.182908560659E+05
+
+relaxtion performed
+
+finial energy-.18290856065857E+05
+
+BYE, BYE        20 -0.182908560659E+05
+   23.30068016052246    0.11650340080261    0.00000000000000
+    0.11650340080261   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290572972125E+05    0.25441886011658E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   239    0.7855E-05
+final energy =     -0.182908209978E+05
+
+relaxtion performed
+
+finial energy-.18290820997822E+05
+
+BYE, BYE        21 -0.182908209978E+05
+   23.30068016052246    0.00000000000000   -0.11650340080261
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.11650340080261    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290412607512E+05    0.20390750655295E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   169    0.9482E-05
+final energy =     -0.182906509277E+05
+
+relaxtion performed
+
+finial energy-.18290650927701E+05
+
+BYE, BYE         1 -0.182906509277E+05
+   23.30068016052246    0.00000000000000   -0.10485306072235
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.10485306072235    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290512649936E+05    0.18373076388643E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   136    0.7774E-05
+final energy =     -0.182907038064E+05
+
+relaxtion performed
+
+finial energy-.18290703806421E+05
+
+BYE, BYE         2 -0.182907038064E+05
+   23.30068016052246    0.00000000000000   -0.09320272064209
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.09320272064209    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290603215580E+05    0.16350660856452E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   134    0.9264E-05
+final energy =     -0.182907530982E+05
+
+relaxtion performed
+
+finial energy-.18290753098171E+05
+
+BYE, BYE         3 -0.182907530982E+05
+   23.30068016052246    0.00000000000000   -0.08155238056183
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.08155238056183    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290679981649E+05    0.14323560579413E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   131    0.9156E-05
+final energy =     -0.182907988578E+05
+
+relaxtion performed
+
+finial energy-.18290798857779E+05
+
+BYE, BYE         4 -0.182907988578E+05
+   23.30068016052246    0.00000000000000   -0.06990204048157
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.06990204048157    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290748834094E+05    0.12291748252139E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   121    0.9609E-05
+final energy =     -0.182908353885E+05
+
+relaxtion performed
+
+finial energy-.18290835388462E+05
+
+BYE, BYE         5 -0.182908353885E+05
+   23.30068016052246    0.00000000000000   -0.05825170040131
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.05825170040131    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290809235860E+05    0.10255166697945E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   124    0.9533E-05
+final energy =     -0.182908683970E+05
+
+relaxtion performed
+
+finial energy-.18290868397030E+05
+
+BYE, BYE         6 -0.182908683970E+05
+   23.30068016052246    0.00000000000000   -0.04660136032104
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.04660136032104    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290860402308E+05    0.82137983613633E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.9308E-05
+final energy =     -0.182908975291E+05
+
+relaxtion performed
+
+finial energy-.18290897529093E+05
+
+BYE, BYE         7 -0.182908975291E+05
+   23.30068016052246    0.00000000000000   -0.03495102024078
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.03495102024078    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290900413997E+05    0.61676540340865E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.9789E-05
+final energy =     -0.182909203704E+05
+
+relaxtion performed
+
+finial energy-.18290920370355E+05
+
+BYE, BYE         8 -0.182909203704E+05
+   23.30068016052246    0.00000000000000   -0.02330068016052
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.02330068016052    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290928618697E+05    0.41168524054565E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    99    0.9541E-05
+final energy =     -0.182909385757E+05
+
+relaxtion performed
+
+finial energy-.18290938575684E+05
+
+BYE, BYE         9 -0.182909385757E+05
+   23.30068016052246    0.00000000000000   -0.01165034008026
+    0.00000000000000   23.30068016052246    0.00000000000000
+   -0.01165034008026    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290946912353E+05    0.20610978021729E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    93    0.9767E-05
+final energy =     -0.182909501518E+05
+
+relaxtion performed
+
+finial energy-.18290950151803E+05
+
+BYE, BYE        10 -0.182909501518E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.79587111500720E-05
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.9474E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE        11 -0.182909560862E+05
+   23.30068016052246    0.00000000000000    0.01165034008026
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.01165034008026    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290955460304E+05    0.20664978448882E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    88    0.7172E-05
+final energy =     -0.182909567779E+05
+
+relaxtion performed
+
+finial energy-.18290956777900E+05
+
+BYE, BYE        12 -0.182909567779E+05
+   23.30068016052246    0.00000000000000    0.02330068016052
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.02330068016052    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290946090891E+05    0.41388519802701E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    92    0.9711E-05
+final energy =     -0.182909560590E+05
+
+relaxtion performed
+
+finial energy-.18290956059047E+05
+
+BYE, BYE        13 -0.182909560590E+05
+   23.30068016052246    0.00000000000000    0.03495102024078
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.03495102024078    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290929079083E+05    0.62158018776943E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    99    0.9942E-05
+final energy =     -0.182909508242E+05
+
+relaxtion performed
+
+finial energy-.18290950824223E+05
+
+BYE, BYE        14 -0.182909508242E+05
+   23.30068016052246    0.00000000000000    0.04660136032104
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.04660136032104    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290901083922E+05    0.82979536828283E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   100    0.7928E-05
+final energy =     -0.182909420010E+05
+
+relaxtion performed
+
+finial energy-.18290942000959E+05
+
+BYE, BYE        15 -0.182909420010E+05
+   23.30068016052246    0.00000000000000    0.05825170040131
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.05825170040131    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290859806878E+05    0.10385429264405E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   103    0.8079E-05
+final energy =     -0.182909232007E+05
+
+relaxtion performed
+
+finial energy-.18290923200740E+05
+
+BYE, BYE        16 -0.182909232007E+05
+   23.30068016052246    0.00000000000000    0.06990204048157
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.06990204048157    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290811584777E+05    0.12478175693279E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   111    0.9097E-05
+final energy =     -0.182909015631E+05
+
+relaxtion performed
+
+finial energy-.18290901563130E+05
+
+BYE, BYE        17 -0.182909015631E+05
+   23.30068016052246    0.00000000000000    0.08155238056183
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.08155238056183    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290752711442E+05    0.14576190249444E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.8632E-05
+final energy =     -0.182908733836E+05
+
+relaxtion performed
+
+finial energy-.18290873383636E+05
+
+BYE, BYE        18 -0.182908733836E+05
+   23.30068016052246    0.00000000000000    0.09320272064209
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.09320272064209    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290683552117E+05    0.16679665624095E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.8595E-05
+final energy =     -0.182908411439E+05
+
+relaxtion performed
+
+finial energy-.18290841143868E+05
+
+BYE, BYE        19 -0.182908411439E+05
+   23.30068016052246    0.00000000000000    0.10485306072235
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.10485306072235    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290607928647E+05    0.18788518924890E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   113    0.9030E-05
+final energy =     -0.182908009032E+05
+
+relaxtion performed
+
+finial energy-.18290800903226E+05
+
+BYE, BYE        20 -0.182908009032E+05
+   23.30068016052246    0.00000000000000    0.11650340080261
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.11650340080261    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0******     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290518210801E+05    0.20902860173048E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   121    0.9889E-05
+final energy =     -0.182907570386E+05
+
+relaxtion performed
+
+finial energy-.18290757038562E+05
+
+BYE, BYE        21 -0.182907570386E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.11650340080261
+    0.00000000000000   -0.11650340080261   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290317005346E+05    0.23324349175519E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   274    0.8609E-05
+final energy =     -0.182905947441E+05
+
+relaxtion performed
+
+finial energy-.18290594744096E+05
+
+BYE, BYE         1 -0.182905947441E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.10485306072235
+    0.00000000000000   -0.10485306072235   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290427467128E+05    0.20989036352859E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   452    0.9781E-05
+final energy =     -0.182906484824E+05
+
+relaxtion performed
+
+finial energy-.18290648482372E+05
+
+BYE, BYE         2 -0.182906484824E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.09320272064209
+    0.00000000000000   -0.09320272064209   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290527076626E+05    0.18654418267075E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   200    0.8302E-05
+final energy =     -0.182906946729E+05
+
+relaxtion performed
+
+finial energy-.18290694672887E+05
+
+BYE, BYE         3 -0.182906946729E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.08155238056183
+    0.00000000000000   -0.08155238056183   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290616210831E+05    0.16320474112467E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   200    0.9805E-05
+final energy =     -0.182907413208E+05
+
+relaxtion performed
+
+finial energy-.18290741320812E+05
+
+BYE, BYE         4 -0.182907413208E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.06990204048157
+    0.00000000000000   -0.06990204048157   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290693116777E+05    0.13987159479391E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   133    0.9456E-05
+final energy =     -0.182907866548E+05
+
+relaxtion performed
+
+finial energy-.18290786654777E+05
+
+BYE, BYE         5 -0.182907866548E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.05825170040131
+    0.00000000000000   -0.05825170040131   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290762321161E+05    0.11654477308117E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.8549E-05
+final energy =     -0.182908274371E+05
+
+relaxtion performed
+
+finial energy-.18290827437083E+05
+
+BYE, BYE         6 -0.182908274371E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.04660136032104
+    0.00000000000000   -0.04660136032104   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290821352766E+05    0.93226554566913E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.8426E-05
+final energy =     -0.182908631182E+05
+
+relaxtion performed
+
+finial energy-.18290863118172E+05
+
+BYE, BYE         7 -0.182908631182E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.03495102024078
+    0.00000000000000   -0.03495102024078   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290870567950E+05    0.69906474749260E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.7320E-05
+final energy =     -0.182908938825E+05
+
+relaxtion performed
+
+finial energy-.18290893882460E+05
+
+BYE, BYE         8 -0.182908938825E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.02330068016052
+    0.00000000000000   -0.02330068016052   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290908021865E+05    0.46600341791578E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   105    0.7933E-05
+final energy =     -0.182909189765E+05
+
+relaxtion performed
+
+finial energy-.18290918976494E+05
+
+BYE, BYE         9 -0.182909189765E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246   -0.01165034008026
+    0.00000000000000   -0.01165034008026   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290935616309E+05    0.23298108758723E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    94    0.7945E-05
+final energy =     -0.182909372076E+05
+
+relaxtion performed
+
+finial energy-.18290937207639E+05
+
+BYE, BYE        10 -0.182909372076E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.00000000000000
+    0.00000000000000    0.00000000000000   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290956086214E+05    0.79587111500720E-05
+          local min reached max force smaller than critcal froce
+number of iteration =     2    0.9474E-05
+final energy =     -0.182909560862E+05
+
+relaxtion performed
+
+finial energy-.18290956086214E+05
+
+BYE, BYE        11 -0.182909560862E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.01165034008026
+    0.00000000000000    0.01165034008026   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290969441301E+05    0.23296431214480E-01
+          local min reached max force smaller than critcal froce
+number of iteration =    95    0.9856E-05
+final energy =     -0.182909723844E+05
+
+relaxtion performed
+
+finial energy-.18290972384358E+05
+
+BYE, BYE        12 -0.182909723844E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.02330068016052
+    0.00000000000000    0.02330068016052   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290970509805E+05    0.46590691465764E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   102    0.9049E-05
+final energy =     -0.182909797422E+05
+
+relaxtion performed
+
+finial energy-.18290979742197E+05
+
+BYE, BYE        13 -0.182909797422E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.03495102024078
+    0.00000000000000    0.03495102024078   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290961640124E+05    0.69887059753475E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   167    0.8910E-05
+final energy =     -0.182909841211E+05
+
+relaxtion performed
+
+finial energy-.18290984121137E+05
+
+BYE, BYE        14 -0.182909841211E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.04660136032104
+    0.00000000000000    0.04660136032104   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290945278825E+05    0.93181658321084E-01
+          local min reached max force smaller than critcal froce
+number of iteration =   110    0.8034E-05
+final energy =     -0.182909852486E+05
+
+relaxtion performed
+
+finial energy-.18290985248553E+05
+
+BYE, BYE        15 -0.182909852486E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.05825170040131
+    0.00000000000000    0.05825170040131   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290915413832E+05    0.11647434610830E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   116    0.8840E-05
+final energy =     -0.182909823927E+05
+
+relaxtion performed
+
+finial energy-.18290982392727E+05
+
+BYE, BYE        16 -0.182909823927E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.06990204048157
+    0.00000000000000    0.06990204048157   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290879312187E+05    0.13976542822562E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   108    0.8636E-05
+final energy =     -0.182909734684E+05
+
+relaxtion performed
+
+finial energy-.18290973468365E+05
+
+BYE, BYE        17 -0.182909734684E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.08155238056183
+    0.00000000000000    0.08155238056183   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290834483308E+05    0.16305142392256E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   131    0.9577E-05
+final energy =     -0.182909616973E+05
+
+relaxtion performed
+
+finial energy-.18290961697309E+05
+
+BYE, BYE        18 -0.182909616973E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.09320272064209
+    0.00000000000000    0.09320272064209   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290776264880E+05    0.18633667085274E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   156    0.9915E-05
+final energy =     -0.182909439083E+05
+
+relaxtion performed
+
+finial energy-.18290943908329E+05
+
+BYE, BYE        19 -0.182909439083E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.10485306072235
+    0.00000000000000    0.10485306072235   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290708666872E+05    0.20962060041186E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   314    0.8928E-05
+final energy =     -0.182909178621E+05
+
+relaxtion performed
+
+finial energy-.18290917862117E+05
+
+BYE, BYE        20 -0.182909178621E+05
+   23.30068016052246    0.00000000000000    0.00000000000000
+    0.00000000000000   23.30068016052246    0.11650340080261
+    0.00000000000000    0.11650340080261   23.30068016052246
+ preforming relaxation
+
+reading parameters
+finding the min:     0     0     0
+
+max step          0.200000000000        1000       0
+
+initial-.18290630581136E+05    0.23290485080862E+00
+          local min reached max force smaller than critcal froce
+number of iteration =   266    0.8558E-05
+final energy =     -0.182908924272E+05
+
+relaxtion performed
+
+finial energy-.18290892427243E+05
+
+BYE, BYE        21 -0.182908924272E+05
+ ------------------------------------------------------------------------------------------------------------------------
+ the end of the       coupling constant calculations
+
+
+
+ run terminating. elapsed cpu time =      1425.248, job time =    600000.000, close time =       200.000
+
+
+
+ run terminated after       0 steps. final averages calculated over       0 steps.
+
+
+ ------------------------------------------------------------------------------------------------------------------------
+
+     step     eng_tot    temp_tot     eng_cfg     eng_vdw     eng_cou     eng_bnd     eng_ang     eng_dih     eng_tet
+ time(ps)      eng_pv    temp_rot     vir_cfg     vir_vdw     vir_cou     vir_bnd     vir_ang     vir_con     vir_tet
+ cpu  (s)      volume    temp_shl     eng_shl     vir_shl       alpha        beta       gamma     vir_pmf       press
+
+ ------------------------------------------------------------------------------------------------------------------------
+        0  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+    0.000  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+     0.08  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+
+  r.m.s.   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+ fluctn.   0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+           0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+ ------------------------------------------------------------------------------------------------------------------------
+
+
+ sample of final configuration
+
+      i       x(i)        y(i)        z(i)       vx(i)       vy(i)       vz(i)       fx(i)       fy(i)       fz(i)
+
+
+      1  3.7587E+00 -6.8874E+00 -7.6532E+00  0.0000E+00  0.0000E+00  0.0000E+00 -1.4245E-03  1.4182E-02 -1.2919E-02
+     52 -1.0992E+01 -5.3511E-01 -9.6387E-01  0.0000E+00  0.0000E+00  0.0000E+00  1.1723E-02 -8.0561E-03 -6.3209E-03
+    103  4.2840E-01 -9.7811E+00  7.2682E+00  0.0000E+00  0.0000E+00  0.0000E+00  9.6906E-03 -3.2020E-03  2.1672E-02
+    154  5.1386E+00  7.0386E+00 -6.8489E+00  0.0000E+00  0.0000E+00  0.0000E+00 -9.7141E-03 -6.1158E-03 -7.8134E-03
+    205 -6.6788E+00  2.7464E+00  7.9922E+00  0.0000E+00  0.0000E+00  0.0000E+00  4.8181E-02  1.2152E-02  4.3805E-02
+    256 -6.9934E+00  1.0502E+01  1.9081E+00  0.0000E+00  0.0000E+00  0.0000E+00  7.5757E-03 -1.8659E-02 -5.5544E-04
+    307 -2.5575E+00  3.7497E+00  3.4278E+00  0.0000E+00  0.0000E+00  0.0000E+00 -8.3263E-03 -1.3253E-02 -2.9114E-02
+    358  2.0640E+00 -1.8636E+00 -4.4970E+00  0.0000E+00  0.0000E+00  0.0000E+00 -3.9269E-02  1.7789E-03 -3.7708E-02
+    409  5.1572E+00 -5.7854E+00  1.0560E+00  0.0000E+00  0.0000E+00  0.0000E+00  1.3652E-02 -2.1451E-02  7.8438E-03
+    460 -2.0212E+00 -5.4993E+00  7.5974E+00  0.0000E+00  0.0000E+00  0.0000E+00 -2.3701E-02  1.2630E-02  1.7383E-03
+    511  1.0937E+01 -7.2694E-01  1.4484E+00  0.0000E+00  0.0000E+00  0.0000E+00 -4.7357E-03  9.4819E-03  1.2320E-02
+    562  1.0278E+01  8.6783E+00 -6.1264E+00  0.0000E+00  0.0000E+00  0.0000E+00  2.3574E-02 -1.4806E-04  6.1162E-03
+    613  9.4161E+00 -7.1097E+00  5.1801E+00  0.0000E+00  0.0000E+00  0.0000E+00  1.3612E-02 -4.0852E-03  1.4447E-02
+    664  1.9462E+00  6.0016E+00 -9.6534E+00  0.0000E+00  0.0000E+00  0.0000E+00  3.5204E-02  7.3476E-03  5.0695E-03
+    715 -5.8580E-01  2.4435E+00 -2.9788E+00  0.0000E+00  0.0000E+00  0.0000E+00 -1.2116E-02  3.6469E-02  4.0077E-02
+    766  9.2832E+00 -8.5192E+00  1.0965E+01  0.0000E+00  0.0000E+00  0.0000E+00 -1.7671E-02  1.3250E-03 -3.5956E-03
+    817 -3.5656E+00  6.0818E+00  3.1046E+00  0.0000E+00  0.0000E+00  0.0000E+00 -1.4824E-02 -1.9339E-03 -1.1002E-02
+    868  4.8176E+00 -5.5261E-01 -7.7470E+00  0.0000E+00  0.0000E+00  0.0000E+00 -7.7228E-03 -9.9780E-03  1.3358E-02
+    919  1.2420E+00 -9.0054E+00  3.6207E+00  0.0000E+00  0.0000E+00  0.0000E+00 -7.1089E-04 -1.7781E-02 -2.1964E-02
+    970 -1.0772E+01 -1.6836E+00  2.5529E+00  0.0000E+00  0.0000E+00  0.0000E+00  4.9321E-03 -2.2028E-02  4.7259E-03
+
+ time elapsed since job start =           0.001 seconds
+

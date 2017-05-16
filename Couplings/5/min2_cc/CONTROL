@@ -1,0 +1,67 @@
+Silica Barrier Search Simulation
+
+###System environment, temperature and pressure
+integration velocity verlet
+temperature		1000K
+pressure                0.001katm
+#zero
+
+###Barrier search parameters
+#bisc 40000 5 1500
+#hitmp 40000 1500
+#wall auto 3
+hessian
+
+###Simulation setup, steps, equilibrium time
+steps			1000000
+equilibration   	39999
+#scale every		20 
+timestep		0.0005 ps
+#multiple timestep	1 
+#restart noscale
+#restart
+#stretch                 0.00001 every 1
+
+###Randomize velocities
+#random auto
+
+###Cutoff of potential and Verlet list radius
+cutoff			10.00 angstrom
+delr			2.0 angstrom
+
+###Print controller
+print	5
+#print every		500
+
+###Statistics
+#stats every             10 
+
+###Trajectory - comment out for hitmp run
+#traj                    5000 50 0
+
+###RDF Options
+#rdf sampling every      100 
+#print rdf
+#zden
+
+###Job and close time 
+job time		600000 seconds
+close time		200 seconds
+
+###Forces options
+shake tolerance	1.0E-5
+quaternion tolerance	1.0E-7
+ewald precision	0.00000001
+#ewald sum		0.30 12 12 18
+#spme precision		0.001
+#spme sum		0.48 6 6 6
+
+###Ensemble options
+#ensemble npt ber     0.1 0.1
+#ensemble npt hoover     0.25 0.25
+ensemble nvt hoover   0.20
+#ensemble nvt ber 2
+#ensemble nvt evans
+#ensemble nve 
+
+finish

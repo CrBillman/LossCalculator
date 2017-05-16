@@ -1,0 +1,4423 @@
+LAMMPS (7 Dec 2015)
+Reading data file ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+  2 by 2 by 3 MPI processor grid
+  reading atoms ...
+  1008 atoms
+Bisection: Getting new map
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+  1008 atoms before read
+  1008 atoms in snapshot
+  0 atoms purged
+  1008 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  1008 atoms after read
+Scanning dump file ...
+Reading snapshot from dump file ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+  1008 atoms before read
+  1008 atoms in snapshot
+  0 atoms purged
+  1008 atoms replaced
+  0 atoms trimmed
+  0 atoms added
+  1008 atoms after read
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0.0582517 0 0) to (23.2424 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365089
+  estimated absolute RMS force accuracy = 1.92191e-05
+  estimated relative force accuracy = 1.33469e-06
+  KSpace vectors: actual max1d max3d = 2088 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Neighbor list info ...
+  2 neighbor list requests
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 11
+  ghost atom cutoff = 11
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0           10   -18273.969            0   -18272.668    3485.1113 
+      22           10   -18274.123            0   -18272.821   -292.44038 
+Loop time of 27.9981 on 12 procs for 22 steps with 1008 atoms
+
+91.6% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.9694078     -18274.1230754     -18274.1230754
+  Force two-norm initial, final = 1.8194 0.13226
+  Force max component initial, final = 0.172867 0.0113715
+  Final line search alpha, max atom move = 4.76837e-07 5.42234e-09
+  Iterations, force evaluations = 22 137
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.15401    | 0.1629     | 0.17846    |   1.7 |  0.58
+Kspace  | 11.453     | 13.521     | 15.299     |  29.8 | 48.29
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 6.5618     | 8.2246     | 10.351     |  39.8 | 29.38
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 6.09       |            |       | 21.75
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2611.67 ave 2638 max 2591 min
+Histogram: 3 2 1 0 0 0 3 0 1 2
+Neighs:    18720.2 ave 19437 max 17452 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 224643
+Ave neighs/atom = 222.86
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0.0388306 0 0) to (23.2618 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365078
+  estimated absolute RMS force accuracy = 1.92793e-05
+  estimated relative force accuracy = 1.33888e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      22           10   -18274.086            0   -18272.784    -116.0541 
+      38           10   -18274.154            0   -18272.852   -2506.9641 
+Loop time of 10.529 on 12 procs for 16 steps with 1008 atoms
+
+91.6% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0857959     -18274.1537909     -18274.1537909
+  Force two-norm initial, final = 1.20542 0.134865
+  Force max component initial, final = 0.114149 0.0136814
+  Final line search alpha, max atom move = 4.76837e-07 6.52382e-09
+  Iterations, force evaluations = 16 73
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.081754   | 0.087709   | 0.094846   |   1.2 |  0.83
+Kspace  | 4.0663     | 5.6857     | 6.4995     |  34.0 | 54.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.82467    | 2.026      | 3.2474     |  58.6 | 19.24
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.73       |            |       | 25.92
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2608.17 ave 2635 max 2589 min
+Histogram: 3 3 0 0 0 3 0 0 1 2
+Neighs:    18687.8 ave 19408 max 17420 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 224254
+Ave neighs/atom = 222.474
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0.0194211 0 0) to (23.2813 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365066
+  estimated absolute RMS force accuracy = 1.9345e-05
+  estimated relative force accuracy = 1.34344e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      38           10    -18274.12            0   -18272.818   -3677.8431 
+      49           10   -18274.138            0   -18272.836    -4782.302 
+Loop time of 10.3218 on 12 procs for 11 steps with 1008 atoms
+
+91.6% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1197648     -18274.1375554     -18274.1375554
+  Force two-norm initial, final = 0.59881 0.0994096
+  Force max component initial, final = 0.0565205 0.0109229
+  Final line search alpha, max atom move = 9.53674e-07 1.04169e-08
+  Iterations, force evaluations = 11 61
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.067385   | 0.072461   | 0.078544   |   1.1 |  0.70
+Kspace  | 4.7088     | 4.8636     | 5.4314     |  11.1 | 47.12
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 2.2977     | 2.5638     | 2.6836     |   9.1 | 24.84
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.822      |            |       | 27.34
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2604.5 ave 2632 max 2586 min
+Histogram: 4 2 0 0 0 2 1 0 1 2
+Neighs:    18657.8 ave 19369 max 17391 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223893
+Ave neighs/atom = 222.116
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      49           10   -18274.068            0   -18272.767   -7203.7615 
+      50           10   -18274.068            0   -18272.767   -7201.4197 
+      51           10   -18274.068            0   -18272.767   -7201.4197 
+Loop time of 5.59501 on 12 procs for 2 steps with 1008 atoms
+
+91.6% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0683273      -18274.068328      -18274.068328
+  Force two-norm initial, final = 0.00481275 0.00321271
+  Force max component initial, final = 0.000368488 0.000304698
+  Final line search alpha, max atom move = 0.000976562 2.97556e-07
+  Iterations, force evaluations = 2 33
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.037041   | 0.039601   | 0.043583   |   0.9 |  0.71
+Kspace  | 2.5783     | 2.664      | 2.9744     |   8.6 | 47.61
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 1.2979     | 1.4241     | 1.5166     |   6.4 | 25.45
+Output  | 0.04401    | 0.055002   | 0.066002   |   3.3 |  0.98
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.412      |            |       | 25.24
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.8 ave 19341 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223533
+Ave neighs/atom = 221.759
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (-0.0194211 0 0) to (23.3201 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365044
+  estimated absolute RMS force accuracy = 1.94944e-05
+  estimated relative force accuracy = 1.35381e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      51           10   -18273.937            0   -18272.635   -10693.267 
+      66           10   -18273.953            0   -18272.651   -9525.5998 
+Loop time of 11.1023 on 12 procs for 15 steps with 1008 atoms
+
+91.6% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.9370878     -18273.9530675     -18273.9530675
+  Force two-norm initial, final = 0.594867 0.0685401
+  Force max component initial, final = 0.0556927 0.00809367
+  Final line search alpha, max atom move = 1.90735e-06 1.54375e-08
+  Iterations, force evaluations = 15 67
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.074312   | 0.078906   | 0.087235   |   1.3 |  0.71
+Kspace  | 5.0398     | 5.1667     | 5.764      |  11.6 | 46.54
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 2.5133     | 2.7505     | 2.8932     |   9.9 | 24.77
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 3.106      |            |       | 27.98
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2601.5 ave 2628 max 2585 min
+Histogram: 5 1 0 0 1 0 3 0 0 2
+Neighs:    18596.8 ave 19310 max 17334 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223162
+Ave neighs/atom = 221.391
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (-0.0388306 0 0) to (23.3395 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365032
+  estimated absolute RMS force accuracy = 1.95788e-05
+  estimated relative force accuracy = 1.35968e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      66           10   -18273.724            0   -18272.422   -14143.885 
+      80           10   -18273.787            0   -18272.485   -11870.579 
+Loop time of 0.344673 on 12 procs for 14 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.7240194      -18273.786728      -18273.786728
+  Force two-norm initial, final = 1.18135 0.1484
+  Force max component initial, final = 0.110245 0.0211154
+  Final line search alpha, max atom move = 4.76837e-07 1.00686e-08
+  Iterations, force evaluations = 14 111
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.1166     | 0.12597    | 0.13901    |   1.8 | 36.55
+Kspace  | 0.1891     | 0.19551    | 0.20088    |   0.7 | 56.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.011368   | 0.021535   | 0.027084   |   3.2 |  6.25
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001659   |            |       |  0.48
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2600.75 ave 2626 max 2585 min
+Histogram: 5 1 0 0 1 0 3 0 0 2
+Neighs:    18569.4 ave 19285 max 17311 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 222833
+Ave neighs/atom = 221.064
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (-0.0582517 0 0) to (23.3589 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365021
+  estimated absolute RMS force accuracy = 1.96704e-05
+  estimated relative force accuracy = 1.36604e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+      80           10   -18273.429            0   -18272.127   -17560.029 
+     100           10   -18273.571            0    -18272.27   -14041.112 
+Loop time of 0.252102 on 12 procs for 20 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.4291048     -18273.5712166     -18273.5712166
+  Force two-norm initial, final = 1.76171 0.125423
+  Force max component initial, final = 0.163831 0.0158233
+  Final line search alpha, max atom move = 4.76837e-07 7.54512e-09
+  Iterations, force evaluations = 20 81
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.085421   | 0.091718   | 0.10205    |   1.5 | 36.38
+Kspace  | 0.14043    | 0.14352    | 0.1465     |   0.5 | 56.93
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0078723  | 0.015605   | 0.019655   |   2.8 |  6.19
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001257   |            |       |  0.50
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2600 ave 2624 max 2585 min
+Histogram: 4 1 1 0 1 0 3 0 1 1
+Neighs:    18540.1 ave 19252 max 17287 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 222481
+Ave neighs/atom = 220.715
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0.0582517 0) to (23.3007 23.2424 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365089
+  estimated absolute RMS force accuracy = 1.92191e-05
+  estimated relative force accuracy = 1.33469e-06
+  KSpace vectors: actual max1d max3d = 2088 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     100           10   -18274.139            0   -18272.837    3460.5596 
+     123           10   -18274.293            0   -18272.992   -209.36248 
+Loop time of 0.271847 on 12 procs for 23 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.138735     -18274.2933097     -18274.2933097
+  Force two-norm initial, final = 1.77347 0.115004
+  Force max component initial, final = 0.16496 0.00832865
+  Final line search alpha, max atom move = 4.76837e-07 3.97141e-09
+  Iterations, force evaluations = 23 87
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.092254   | 0.099034   | 0.11029    |   1.7 | 36.43
+Kspace  | 0.14954    | 0.15383    | 0.15777    |   0.6 | 56.59
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0086644  | 0.017546   | 0.022138   |   3.1 |  6.45
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001435   |            |       |  0.53
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2612.92 ave 2642 max 2591 min
+Histogram: 3 2 0 1 1 1 1 1 0 2
+Neighs:    18721.6 ave 19431 max 17458 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 224659
+Ave neighs/atom = 222.876
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0.0388306 0) to (23.3007 23.2618 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365078
+  estimated absolute RMS force accuracy = 1.92793e-05
+  estimated relative force accuracy = 1.33888e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     123           10   -18274.203            0   -18272.901   -133.74878 
+     136           10   -18274.268            0   -18272.966   -2407.2483 
+Loop time of 0.20948 on 12 procs for 13 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2031003     -18274.2676432     -18274.2676432
+  Force two-norm initial, final = 1.17515 0.161701
+  Force max component initial, final = 0.108975 0.0217342
+  Final line search alpha, max atom move = 4.76837e-07 1.03637e-08
+  Iterations, force evaluations = 13 67
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.071907   | 0.077372   | 0.084635   |   1.2 | 36.94
+Kspace  | 0.11523    | 0.11863    | 0.12116    |   0.6 | 56.63
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0069149  | 0.012401   | 0.015584   |   2.2 |  5.92
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001076   |            |       |  0.51
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2610.17 ave 2640 max 2589 min
+Histogram: 3 1 1 1 1 2 0 1 0 2
+Neighs:    18692 ave 19398 max 17427 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 224304
+Ave neighs/atom = 222.524
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0.0194211 0) to (23.3007 23.2813 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365066
+  estimated absolute RMS force accuracy = 1.9345e-05
+  estimated relative force accuracy = 1.34344e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     136           10   -18274.177            0   -18272.876   -3686.4645 
+     150           10   -18274.196            0   -18272.895   -4834.5234 
+     153           10   -18274.197            0   -18272.895   -4851.6161 
+Loop time of 0.227343 on 12 procs for 17 steps with 1008 atoms
+
+99.7% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1773981      -18274.196577      -18274.196577
+  Force two-norm initial, final = 0.583791 0.0591259
+  Force max component initial, final = 0.0540019 0.00550549
+  Final line search alpha, max atom move = 1.90735e-06 1.05009e-08
+  Iterations, force evaluations = 17 73
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.077838   | 0.083204   | 0.092532   |   1.4 | 36.60
+Kspace  | 0.12473    | 0.12908    | 0.13196    |   0.6 | 56.78
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.007014   | 0.013924   | 0.017584   |   2.7 |  6.12
+Output  | 2.408e-05  | 2.4895e-05 | 3.1948e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001106   |            |       |  0.49
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2606 ave 2631 max 2589 min
+Histogram: 5 0 1 0 1 0 2 1 0 2
+Neighs:    18658.2 ave 19374 max 17394 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223898
+Ave neighs/atom = 222.121
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     153           10   -18274.068            0   -18272.767   -7203.7615 
+     155           10   -18274.068            0   -18272.767   -7201.4197 
+Loop time of 0.104712 on 12 procs for 2 steps with 1008 atoms
+
+99.2% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0683273      -18274.068328      -18274.068328
+  Force two-norm initial, final = 0.00481275 0.00321271
+  Force max component initial, final = 0.000368488 0.000304698
+  Final line search alpha, max atom move = 0.000976562 2.97556e-07
+  Iterations, force evaluations = 2 33
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.035489   | 0.038173   | 0.042828   |   1.1 | 36.46
+Kspace  | 0.058246   | 0.059526   | 0.061133   |   0.4 | 56.85
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0031986  | 0.0065593  | 0.0082765  |   1.9 |  6.26
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0004539  |            |       |  0.43
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.8 ave 19341 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223533
+Ave neighs/atom = 221.759
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 -0.0194211 0) to (23.3007 23.3201 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365044
+  estimated absolute RMS force accuracy = 1.94944e-05
+  estimated relative force accuracy = 1.35381e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     155           10   -18273.876            0   -18272.574   -10683.469 
+     165           10   -18273.892            0    -18272.59   -9594.7135 
+Loop time of 0.184699 on 12 procs for 10 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.8755809     -18273.8921031     -18273.8921031
+  Force two-norm initial, final = 0.580386 0.11091
+  Force max component initial, final = 0.0530352 0.0116315
+  Final line search alpha, max atom move = 9.53674e-07 1.10927e-08
+  Iterations, force evaluations = 10 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062227   | 0.067144   | 0.074997   |   1.4 | 36.35
+Kspace  | 0.10218    | 0.10495    | 0.10694    |   0.5 | 56.82
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0059009  | 0.011703   | 0.014775   |   2.5 |  6.34
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009044  |            |       |  0.49
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2595.17 ave 2619 max 2577 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18596.4 ave 19310 max 17333 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223157
+Ave neighs/atom = 221.386
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 -0.0388306 0) to (23.3007 23.3395 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365032
+  estimated absolute RMS force accuracy = 1.95788e-05
+  estimated relative force accuracy = 1.35968e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     165           10   -18273.601            0   -18272.299   -14124.137 
+     178           10   -18273.663            0   -18272.361   -11880.089 
+Loop time of 0.208444 on 12 procs for 13 steps with 1008 atoms
+
+99.7% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.6010384      -18273.662549      -18273.662549
+  Force two-norm initial, final = 1.15278 0.156736
+  Force max component initial, final = 0.105098 0.0134624
+  Final line search alpha, max atom move = 4.76837e-07 6.41937e-09
+  Iterations, force evaluations = 13 67
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.07109    | 0.0762     | 0.084281   |   1.3 | 36.56
+Kspace  | 0.11607    | 0.11917    | 0.12155    |   0.6 | 57.17
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0066154  | 0.012088   | 0.015133   |   2.3 |  5.80
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009858  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2590.5 ave 2616 max 2567 min
+Histogram: 1 2 2 1 0 1 1 2 1 1
+Neighs:    18563.8 ave 19272 max 17302 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 222766
+Ave neighs/atom = 220.998
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 -0.0582517 0) to (23.3007 23.3589 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365021
+  estimated absolute RMS force accuracy = 1.96704e-05
+  estimated relative force accuracy = 1.36604e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     178           10   -18273.242            0    -18271.94   -17529.524 
+     200           10   -18273.385            0   -18272.084   -13971.705 
+     201           10   -18273.385            0   -18272.084   -13971.705 
+Loop time of 0.2704 on 12 procs for 23 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.2419308     -18273.3853668     -18273.3853668
+  Force two-norm initial, final = 1.71934 0.113733
+  Force max component initial, final = 0.156313 0.00853928
+  Final line search alpha, max atom move = 9.53674e-07 8.14369e-09
+  Iterations, force evaluations = 23 87
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.091463   | 0.097633   | 0.10993    |   1.6 | 36.11
+Kspace  | 0.15074    | 0.15461    | 0.15785    |   0.6 | 57.18
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0084274  | 0.016807   | 0.021228   |   3.0 |  6.22
+Output  | 2.408e-05  | 2.5451e-05 | 3.1948e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001324   |            |       |  0.49
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2586 ave 2607 max 2557 min
+Histogram: 1 0 1 2 1 1 0 3 1 2
+Neighs:    18532.8 ave 19237 max 17272 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 222394
+Ave neighs/atom = 220.629
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0.0582517) to (23.3007 23.3007 23.2424) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365089
+  estimated absolute RMS force accuracy = 1.92191e-05
+  estimated relative force accuracy = 1.33469e-06
+  KSpace vectors: actual max1d max3d = 2088 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     201           10   -18274.105            0   -18272.803    3326.5806 
+     218           10   -18274.253            0   -18272.952   -294.40259 
+Loop time of 0.240216 on 12 procs for 17 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1045426     -18274.2532221     -18274.2532221
+  Force two-norm initial, final = 1.88776 0.179568
+  Force max component initial, final = 0.149755 0.01352
+  Final line search alpha, max atom move = 2.38419e-07 3.22343e-09
+  Iterations, force evaluations = 17 77
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.081282   | 0.087436   | 0.097824   |   1.6 | 36.40
+Kspace  | 0.13376    | 0.13654    | 0.13994    |   0.5 | 56.84
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0074286  | 0.015096   | 0.019099   |   2.9 |  6.28
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001147   |            |       |  0.48
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2615.75 ave 2642 max 2594 min
+Histogram: 2 0 4 0 0 2 1 1 1 1
+Neighs:    18717.8 ave 19445 max 17447 min
+Histogram: 1 0 0 0 0 2 5 3 0 1
+
+Total # of neighbors = 224614
+Ave neighs/atom = 222.831
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0.0388306) to (23.3007 23.3007 23.2618) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365078
+  estimated absolute RMS force accuracy = 1.92793e-05
+  estimated relative force accuracy = 1.33888e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     218           10   -18274.178            0   -18272.877   -221.99738 
+     230           10   -18274.242            0    -18272.94   -2506.5186 
+Loop time of 0.209057 on 12 procs for 12 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1783654     -18274.2418496     -18274.2418496
+  Force two-norm initial, final = 1.25086 0.179648
+  Force max component initial, final = 0.0989151 0.0269991
+  Final line search alpha, max atom move = 2.38419e-07 6.4371e-09
+  Iterations, force evaluations = 12 67
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.071843   | 0.07665    | 0.084509   |   1.3 | 36.66
+Kspace  | 0.11576    | 0.11856    | 0.12106    |   0.5 | 56.71
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.00669    | 0.01279    | 0.016068   |   2.5 |  6.12
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001055   |            |       |  0.50
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2611.75 ave 2641 max 2589 min
+Histogram: 2 1 2 1 0 2 1 2 0 1
+Neighs:    18688.9 ave 19402 max 17427 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 224267
+Ave neighs/atom = 222.487
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0.0194211) to (23.3007 23.3007 23.2813) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365066
+  estimated absolute RMS force accuracy = 1.9345e-05
+  estimated relative force accuracy = 1.34344e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     230           10   -18274.165            0   -18272.863   -3730.2597 
+     239           10   -18274.178            0   -18272.876   -4806.5396 
+Loop time of 0.185161 on 12 procs for 9 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1646543     -18274.1777868     -18274.1777868
+  Force two-norm initial, final = 0.621415 0.118412
+  Force max component initial, final = 0.049006 0.014946
+  Final line search alpha, max atom move = 4.76837e-07 7.12682e-09
+  Iterations, force evaluations = 9 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.064026   | 0.0682     | 0.075485   |   1.2 | 36.83
+Kspace  | 0.10207    | 0.10492    | 0.10714    |   0.5 | 56.67
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0058897  | 0.011164   | 0.014039   |   2.3 |  6.03
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008738  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2604.75 ave 2630 max 2588 min
+Histogram: 5 0 1 0 1 1 2 0 0 2
+Neighs:    18657.9 ave 19370 max 17397 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223895
+Ave neighs/atom = 222.118
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     239           10   -18274.068            0   -18272.767   -7203.7615 
+     241           10   -18274.068            0   -18272.767   -7201.4197 
+Loop time of 0.105009 on 12 procs for 2 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0683273      -18274.068328      -18274.068328
+  Force two-norm initial, final = 0.00481275 0.00321271
+  Force max component initial, final = 0.000368488 0.000304698
+  Final line search alpha, max atom move = 0.000976562 2.97556e-07
+  Iterations, force evaluations = 2 33
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.035549   | 0.038154   | 0.042684   |   1.0 | 36.33
+Kspace  | 0.058081   | 0.059764   | 0.061381   |   0.4 | 56.91
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0033598  | 0.0066036  | 0.008342   |   1.8 |  6.29
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0004878  |            |       |  0.46
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.8 ave 19341 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223533
+Ave neighs/atom = 221.759
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 -0.0194211) to (23.3007 23.3007 23.3201) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365044
+  estimated absolute RMS force accuracy = 1.94944e-05
+  estimated relative force accuracy = 1.35381e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     241           10   -18273.891            0   -18272.589   -10640.868 
+     250           10   -18273.909            0   -18272.607   -9530.4176 
+     252           10   -18273.909            0   -18272.607   -9516.3684 
+Loop time of 0.188911 on 12 procs for 11 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.8910512     -18273.9090548     -18273.9090548
+  Force two-norm initial, final = 0.617418 0.100145
+  Force max component initial, final = 0.0482764 0.0127077
+  Final line search alpha, max atom move = 9.53674e-07 1.2119e-08
+  Iterations, force evaluations = 11 61
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.06469    | 0.06921    | 0.076031   |   1.3 | 36.64
+Kspace  | 0.10392    | 0.10692    | 0.10974    |   0.5 | 56.60
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0058577  | 0.011867   | 0.014964   |   2.5 |  6.28
+Output  | 2.408e-05  | 2.4915e-05 | 3.2187e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008921  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602 ave 2628 max 2586 min
+Histogram: 5 0 1 0 1 1 2 0 0 2
+Neighs:    18596.2 ave 19306 max 17336 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223155
+Ave neighs/atom = 221.384
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 -0.0388306) to (23.3007 23.3007 23.3395) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365032
+  estimated absolute RMS force accuracy = 1.95788e-05
+  estimated relative force accuracy = 1.35968e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     252           10   -18273.631            0    -18272.33   -14039.353 
+     265           10   -18273.696            0   -18272.395   -11772.925 
+Loop time of 0.341765 on 12 procs for 13 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.6311922     -18273.6963533     -18273.6963533
+  Force two-norm initial, final = 1.22629 0.16489
+  Force max component initial, final = 0.0956144 0.0141835
+  Final line search alpha, max atom move = 2.38419e-07 3.38162e-09
+  Iterations, force evaluations = 13 111
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.1159     | 0.12489    | 0.13765    |   1.8 | 36.54
+Kspace  | 0.1898     | 0.19391    | 0.19806    |   0.6 | 56.74
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.010803   | 0.021408   | 0.026978   |   3.3 |  6.26
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001554   |            |       |  0.45
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2599 ave 2625 max 2582 min
+Histogram: 4 2 0 0 1 1 1 1 1 1
+Neighs:    18566.6 ave 19275 max 17306 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 222799
+Ave neighs/atom = 221.031
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 -0.0582517) to (23.3007 23.3007 23.3589) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365021
+  estimated absolute RMS force accuracy = 1.96704e-05
+  estimated relative force accuracy = 1.36604e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     265           10   -18273.294            0   -18271.992   -17404.788 
+     285           10   -18273.447            0   -18272.145   -13804.386 
+Loop time of 0.381282 on 12 procs for 20 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.2936497     -18273.4470767     -18273.4470767
+  Force two-norm initial, final = 1.82894 0.129094
+  Force max component initial, final = 0.142133 0.0108284
+  Final line search alpha, max atom move = 4.76837e-07 5.16338e-09
+  Iterations, force evaluations = 20 123
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12858    | 0.13804    | 0.15515    |   2.0 | 36.21
+Kspace  | 0.21219    | 0.21809    | 0.22294    |   0.8 | 57.20
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.011857   | 0.023408   | 0.029492   |   3.4 |  6.14
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001737   |            |       |  0.46
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2597.5 ave 2625 max 2578 min
+Histogram: 2 2 2 0 1 1 2 0 1 1
+Neighs:    18535.8 ave 19244 max 17270 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 222430
+Ave neighs/atom = 220.665
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (-0.116503 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     285           10   -18273.839            0   -18272.538   -7179.2317 
+     300           10     -18273.9            0   -18272.598   -7086.7131 
+     307           10   -18273.901            0     -18272.6   -7054.4457 
+Loop time of 0.253382 on 12 procs for 22 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.8393449      -18273.901242      -18273.901242
+  Force two-norm initial, final = 1.24019 0.0725244
+  Force max component initial, final = 0.123367 0.00652635
+  Final line search alpha, max atom move = 1.90735e-06 1.2448e-08
+  Iterations, force evaluations = 22 81
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.086009   | 0.092229   | 0.10353    |   1.6 | 36.40
+Kspace  | 0.14008    | 0.14406    | 0.14774    |   0.6 | 56.85
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0080454  | 0.015727   | 0.019796   |   2.8 |  6.21
+Output  | 2.3842e-05 | 2.5312e-05 | 3.2902e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001342   |            |       |  0.53
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18628.2 ave 19342 max 17365 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223539
+Ave neighs/atom = 221.765
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (-0.077661 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     307           10   -18273.943            0   -18272.641   -7191.8386 
+     316           10   -18273.968            0   -18272.667   -7142.2007 
+Loop time of 0.183745 on 12 procs for 9 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.9430946     -18273.9682141     -18273.9682141
+  Force two-norm initial, final = 0.826704 0.140963
+  Force max component initial, final = 0.0821478 0.0138492
+  Final line search alpha, max atom move = 4.76837e-07 6.60382e-09
+  Iterations, force evaluations = 9 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062704   | 0.067649   | 0.074426   |   1.3 | 36.82
+Kspace  | 0.10084    | 0.10423    | 0.10695    |   0.5 | 56.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0057747  | 0.010989   | 0.013819   |   2.3 |  5.98
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008774  |            |       |  0.48
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627 ave 19347 max 17366 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223524
+Ave neighs/atom = 221.75
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (-0.038842 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     316           10   -18274.018            0   -18272.717   -7199.6928 
+     326           10   -18274.027            0   -18272.725   -7167.3219 
+Loop time of 0.178428 on 12 procs for 10 steps with 1008 atoms
+
+100.3% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0182462     -18274.0267975     -18274.0267975
+  Force two-norm initial, final = 0.413539 0.0635335
+  Force max component initial, final = 0.0410548 0.00941341
+  Final line search alpha, max atom move = 1.90735e-06 1.79547e-08
+  Iterations, force evaluations = 10 57
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.060971   | 0.06519    | 0.072873   |   1.3 | 36.54
+Kspace  | 0.099232   | 0.10164    | 0.10416    |   0.5 | 56.97
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0055258  | 0.010766   | 0.013561   |   2.3 |  6.03
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008299  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18625.7 ave 19339 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223508
+Ave neighs/atom = 221.734
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     326           10   -18274.068            0   -18272.767   -7203.7615 
+     328           10   -18274.068            0   -18272.767   -7201.4197 
+Loop time of 0.10502 on 12 procs for 2 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0683273      -18274.068328      -18274.068328
+  Force two-norm initial, final = 0.00481275 0.00321271
+  Force max component initial, final = 0.000368488 0.000304698
+  Final line search alpha, max atom move = 0.000976562 2.97556e-07
+  Iterations, force evaluations = 2 33
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.035214   | 0.038042   | 0.042921   |   1.1 | 36.22
+Kspace  | 0.058284   | 0.059925   | 0.061598   |   0.4 | 57.06
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0032871  | 0.0065304  | 0.0082393  |   1.8 |  6.22
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0005215  |            |       |  0.50
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.8 ave 19341 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223533
+Ave neighs/atom = 221.759
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0.038842 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     328           10   -18274.089            0   -18272.788   -7202.8758 
+     331           10   -18274.094            0   -18272.792   -7215.8264 
+Loop time of 0.152844 on 12 procs for 3 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.089341     -18274.0939022     -18274.0939022
+  Force two-norm initial, final = 0.413301 0.192761
+  Force max component initial, final = 0.0408437 0.0171066
+  Final line search alpha, max atom move = 2.38419e-07 4.07852e-09
+  Iterations, force evaluations = 3 49
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.052153   | 0.055837   | 0.061786   |   1.2 | 36.53
+Kspace  | 0.084573   | 0.086882   | 0.089203   |   0.4 | 56.84
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0047917  | 0.0094561  | 0.011925   |   2.2 |  6.19
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000669   |            |       |  0.44
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.6 ave 19339 max 17360 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223531
+Ave neighs/atom = 221.757
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0.077661 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     331           10   -18274.078            0   -18272.776   -7196.3812 
+     341           10   -18274.104            0   -18272.803   -7247.9142 
+Loop time of 0.19102 on 12 procs for 10 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0781185     -18274.1041918     -18274.1041918
+  Force two-norm initial, final = 0.826411 0.127194
+  Force max component initial, final = 0.0816097 0.0207487
+  Final line search alpha, max atom move = 4.76837e-07 9.89377e-09
+  Iterations, force evaluations = 10 61
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.064652   | 0.069456   | 0.078019   |   1.3 | 36.36
+Kspace  | 0.1062     | 0.1087     | 0.11155    |   0.4 | 56.91
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0059311  | 0.011961   | 0.015091   |   2.5 |  6.26
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008982  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18625.3 ave 19330 max 17357 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223504
+Ave neighs/atom = 221.73
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0.116503 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     341           10   -18274.045            0   -18272.743   -7186.7422 
+     350           10   -18274.098            0   -18272.796   -7272.1732 
+     355           10   -18274.101            0   -18272.799   -7283.8404 
+Loop time of 0.215216 on 12 procs for 14 steps with 1008 atoms
+
+100.2% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.044671     -18274.1007032     -18274.1007032
+  Force two-norm initial, final = 1.23981 0.121572
+  Force max component initial, final = 0.122291 0.0115466
+  Final line search alpha, max atom move = 4.76837e-07 5.50584e-09
+  Iterations, force evaluations = 14 69
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.073745   | 0.078852   | 0.08734    |   1.4 | 36.64
+Kspace  | 0.11865    | 0.12193    | 0.12485    |   0.5 | 56.66
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0068438  | 0.013309   | 0.016746   |   2.6 |  6.18
+Output  | 2.408e-05  | 2.5213e-05 | 3.1948e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001096   |            |       |  0.51
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.2 ave 19324 max 17359 min
+Histogram: 1 0 0 0 0 1 6 2 1 1
+
+Total # of neighbors = 223527
+Ave neighs/atom = 221.753
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 -0.116503 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     355           10    -18273.94            0   -18272.638   -7141.8642 
+     372           10   -18273.996            0   -18272.694   -7233.3224 
+Loop time of 0.442709 on 12 procs for 17 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18273.940084     -18273.9960827     -18273.9960827
+  Force two-norm initial, final = 1.23961 0.0983313
+  Force max component initial, final = 0.109257 0.00769577
+  Final line search alpha, max atom move = 9.53674e-07 7.33926e-09
+  Iterations, force evaluations = 17 143
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.1504     | 0.16129    | 0.17983    |   2.0 | 36.43
+Kspace  | 0.24344    | 0.25185    | 0.25725    |   0.8 | 56.89
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.014107   | 0.027518   | 0.034713   |   3.7 |  6.22
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.002047   |            |       |  0.46
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.2 ave 19339 max 17369 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223526
+Ave neighs/atom = 221.752
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 -0.077661 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     372           10   -18274.009            0   -18272.708   -7167.1224 
+     383           10   -18274.034            0   -18272.733   -7222.0021 
+Loop time of 0.190427 on 12 procs for 11 steps with 1008 atoms
+
+100.2% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0093627     -18274.0343339     -18274.0343339
+  Force two-norm initial, final = 0.826427 0.108728
+  Force max component initial, final = 0.072702 0.0113353
+  Final line search alpha, max atom move = 9.53674e-07 1.08102e-08
+  Iterations, force evaluations = 11 61
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.065095   | 0.069779   | 0.077223   |   1.3 | 36.64
+Kspace  | 0.10547    | 0.10804    | 0.11046    |   0.5 | 56.73
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.006031   | 0.011688   | 0.014756   |   2.4 |  6.14
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000925   |            |       |  0.49
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18625.3 ave 19339 max 17363 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223504
+Ave neighs/atom = 221.73
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 -0.038842 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     383           10   -18274.053            0   -18272.752   -7188.0128 
+     390           10   -18274.059            0   -18272.757   -7198.8811 
+Loop time of 0.16504 on 12 procs for 7 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0533309     -18274.0588838     -18274.0588838
+  Force two-norm initial, final = 0.413406 0.0872575
+  Force max component initial, final = 0.0363655 0.00959427
+  Final line search alpha, max atom move = 9.53674e-07 9.14981e-09
+  Iterations, force evaluations = 7 53
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.057076   | 0.060954   | 0.066606   |   1.1 | 36.93
+Kspace  | 0.091423   | 0.093294   | 0.09525    |   0.4 | 56.53
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0052476  | 0.010015   | 0.012615   |   2.2 |  6.07
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0007781  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18625.9 ave 19340 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223511
+Ave neighs/atom = 221.737
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     390           10   -18274.068            0   -18272.767   -7203.7615 
+     392           10   -18274.068            0   -18272.767   -7201.4197 
+Loop time of 0.104661 on 12 procs for 2 steps with 1008 atoms
+
+99.4% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0683273      -18274.068328      -18274.068328
+  Force two-norm initial, final = 0.00481275 0.00321271
+  Force max component initial, final = 0.000368488 0.000304698
+  Final line search alpha, max atom move = 0.000976562 2.97556e-07
+  Iterations, force evaluations = 2 33
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.035725   | 0.038212   | 0.042446   |   1.0 | 36.51
+Kspace  | 0.058111   | 0.059359   | 0.061063   |   0.4 | 56.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0033047  | 0.0066166  | 0.0083444  |   1.8 |  6.32
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0004733  |            |       |  0.45
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.8 ave 19341 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223533
+Ave neighs/atom = 221.759
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0.038842 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     392           10   -18274.058            0   -18272.756   -7214.9686 
+     399           10   -18274.064            0   -18272.762   -7192.4685 
+Loop time of 0.166521 on 12 procs for 7 steps with 1008 atoms
+
+99.5% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0575482     -18274.0640578     -18274.0640578
+  Force two-norm initial, final = 0.413477 0.087194
+  Force max component initial, final = 0.0363067 0.00944465
+  Final line search alpha, max atom move = 9.53674e-07 9.00712e-09
+  Iterations, force evaluations = 7 53
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.056342   | 0.060502   | 0.067852   |   1.3 | 36.33
+Kspace  | 0.09241    | 0.094849   | 0.096992   |   0.4 | 56.96
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0053067  | 0.010382   | 0.013082   |   2.3 |  6.23
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0007881  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.6 ave 19335 max 17366 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223531
+Ave neighs/atom = 221.757
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0.077661 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     399           10   -18274.016            0   -18272.715   -7220.6104 
+     400           10   -18274.026            0   -18272.724   -7214.5567 
+     425           10   -18274.043            0   -18272.741   -7141.0792 
+Loop time of 0.265402 on 12 procs for 26 steps with 1008 atoms
+
+99.7% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0162458     -18274.0427703     -18274.0427703
+  Force two-norm initial, final = 0.82677 0.0347752
+  Force max component initial, final = 0.0724751 0.00259694
+  Final line search alpha, max atom move = 7.62939e-06 1.98131e-08
+  Iterations, force evaluations = 26 85
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.089987   | 0.096563   | 0.1081     |   1.6 | 36.38
+Kspace  | 0.14685    | 0.15061    | 0.15482    |   0.6 | 56.75
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0083857  | 0.016772   | 0.021138   |   3.0 |  6.32
+Output  | 2.2173e-05 | 2.3146e-05 | 3.0041e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001438   |            |       |  0.54
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18626.9 ave 19330 max 17368 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223523
+Ave neighs/atom = 221.749
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0.116503 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     425           10   -18273.949            0   -18272.648   -7221.8963 
+     437           10   -18274.003            0   -18272.701   -7144.5285 
+Loop time of 0.201791 on 12 procs for 12 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.9492521     -18274.0026756     -18274.0026756
+  Force two-norm initial, final = 1.24052 0.145757
+  Force max component initial, final = 0.108702 0.0205155
+  Final line search alpha, max atom move = 4.76837e-07 9.78255e-09
+  Iterations, force evaluations = 12 65
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.069288   | 0.074229   | 0.08167    |   1.2 | 36.78
+Kspace  | 0.11193    | 0.11467    | 0.11708    |   0.5 | 56.82
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0063255  | 0.011925   | 0.014924   |   2.3 |  5.91
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009715  |            |       |  0.48
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.1 ave 19325 max 17367 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223525
+Ave neighs/atom = 221.751
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 -0.116503)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     437           10   -18274.022            0    -18272.72   -7175.3496 
+     450           10   -18274.083            0   -18272.781   -7084.3167 
+     457           10   -18274.087            0   -18272.785   -7140.7007 
+Loop time of 0.245269 on 12 procs for 20 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0219455     -18274.0865304     -18274.0865304
+  Force two-norm initial, final = 1.26098 0.100614
+  Force max component initial, final = 0.122249 0.00948906
+  Final line search alpha, max atom move = 9.53674e-07 9.04948e-09
+  Iterations, force evaluations = 20 79
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.083703   | 0.089347   | 0.099749   |   1.5 | 36.43
+Kspace  | 0.13533    | 0.13941    | 0.14244    |   0.6 | 56.84
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0075479  | 0.015283   | 0.019242   |   2.8 |  6.23
+Output  | 2.1935e-05 | 2.2888e-05 | 3.0994e-05 |   0.1 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.00121    |            |       |  0.49
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18625.8 ave 19326 max 17366 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223510
+Ave neighs/atom = 221.736
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 -0.077661)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     457           10   -18274.064            0   -18272.762   -7189.0817 
+     470           10    -18274.09            0   -18272.788   -7115.5859 
+Loop time of 0.20851 on 12 procs for 13 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.063521     -18274.0899187     -18274.0899187
+  Force two-norm initial, final = 0.840624 0.122873
+  Force max component initial, final = 0.0814703 0.0154211
+  Final line search alpha, max atom move = 4.76837e-07 7.35335e-09
+  Iterations, force evaluations = 13 67
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.071789   | 0.076268   | 0.084606   |   1.3 | 36.58
+Kspace  | 0.11627    | 0.11875    | 0.12138    |   0.5 | 56.95
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0065143  | 0.012504   | 0.01567    |   2.4 |  6.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000988   |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18628.4 ave 19335 max 17368 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223541
+Ave neighs/atom = 221.767
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 -0.038842)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     470           10   -18274.078            0   -18272.776   -7198.3211 
+     479           10   -18274.086            0   -18272.784   -7149.7079 
+Loop time of 0.17841 on 12 procs for 9 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0781179     -18274.0858073     -18274.0858073
+  Force two-norm initial, final = 0.420572 0.0881122
+  Force max component initial, final = 0.0407514 0.0101336
+  Final line search alpha, max atom move = 9.53674e-07 9.66419e-09
+  Iterations, force evaluations = 9 57
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.061612   | 0.06523    | 0.072757   |   1.3 | 36.56
+Kspace  | 0.099287   | 0.10152    | 0.10418    |   0.4 | 56.90
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0055666  | 0.01082    | 0.013587   |   2.3 |  6.06
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008359  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18626.5 ave 19335 max 17361 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223518
+Ave neighs/atom = 221.744
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     479           10   -18274.068            0   -18272.767   -7203.7615 
+     481           10   -18274.068            0   -18272.767   -7201.4197 
+Loop time of 0.103903 on 12 procs for 2 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0683273      -18274.068328      -18274.068328
+  Force two-norm initial, final = 0.00481275 0.00321271
+  Force max component initial, final = 0.000368488 0.000304698
+  Final line search alpha, max atom move = 0.000976562 2.97556e-07
+  Iterations, force evaluations = 2 33
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.035662   | 0.038105   | 0.041823   |   0.9 | 36.67
+Kspace  | 0.057082   | 0.059093   | 0.060547   |   0.4 | 56.87
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0033212  | 0.0062212  | 0.0077703  |   1.7 |  5.99
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0004843  |            |       |  0.47
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18627.8 ave 19341 max 17364 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223533
+Ave neighs/atom = 221.759
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0.038842)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     481           10   -18274.032            0    -18272.73   -7204.6213 
+     495           10   -18274.039            0   -18272.737   -7228.6163 
+Loop time of 0.307062 on 12 procs for 14 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0316839      -18274.038776      -18274.038776
+  Force two-norm initial, final = 0.420239 0.0581379
+  Force max component initial, final = 0.040681 0.0078465
+  Final line search alpha, max atom move = 1.90735e-06 1.4966e-08
+  Iterations, force evaluations = 14 99
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10448    | 0.11209    | 0.12449    |   1.7 | 36.50
+Kspace  | 0.16913    | 0.17447    | 0.17907    |   0.7 | 56.82
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0096781  | 0.019072   | 0.024012   |   3.1 |  6.21
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001426   |            |       |  0.46
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18628.2 ave 19344 max 17367 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223539
+Ave neighs/atom = 221.765
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0.077661)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     495           10   -18273.965            0   -18272.663    -7200.129 
+     500           10   -18273.987            0   -18272.685   -7284.0751 
+     503           10   -18273.988            0   -18272.687   -7282.6326 
+Loop time of 0.183777 on 12 procs for 8 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18273.964797     -18273.9882642     -18273.9882642
+  Force two-norm initial, final = 0.840376 0.190001
+  Force max component initial, final = 0.0813455 0.0200132
+  Final line search alpha, max atom move = 2.38419e-07 4.77153e-09
+  Iterations, force evaluations = 8 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062382   | 0.066795   | 0.074642   |   1.4 | 36.35
+Kspace  | 0.10234    | 0.10453    | 0.10684    |   0.5 | 56.88
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0057247  | 0.011572   | 0.01457    |   2.5 |  6.30
+Output  | 2.2888e-05 | 2.3802e-05 | 3.1948e-05 |   0.1 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008539  |            |       |  0.46
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18626.8 ave 19346 max 17361 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223521
+Ave neighs/atom = 221.747
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0.116503)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     503           10   -18273.867            0   -18272.566   -7190.2971 
+     526           10   -18273.933            0   -18272.632   -7202.5767 
+Loop time of 0.263855 on 12 procs for 23 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.8672795     -18273.9334768     -18273.9334768
+  Force two-norm initial, final = 1.26076 0.097127
+  Force max component initial, final = 0.122024 0.00713289
+  Final line search alpha, max atom move = 9.53674e-07 6.80245e-09
+  Iterations, force evaluations = 23 85
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.090419   | 0.096492   | 0.10725    |   1.5 | 36.57
+Kspace  | 0.14646    | 0.15037    | 0.15375    |   0.6 | 56.99
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0082984  | 0.015672   | 0.019629   |   2.7 |  5.94
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001324   |            |       |  0.50
+
+Nlocal:    84 ave 87 max 79 min
+Histogram: 1 0 0 0 0 2 4 4 0 1
+Nghost:    2602.5 ave 2628 max 2586 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18624.2 ave 19345 max 17358 min
+Histogram: 1 0 0 0 0 1 6 3 0 1
+
+Total # of neighbors = 223491
+Ave neighs/atom = 221.717
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0.0582517 0 0) to (23.2424 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365089
+  estimated absolute RMS force accuracy = 1.92191e-05
+  estimated relative force accuracy = 1.33469e-06
+  KSpace vectors: actual max1d max3d = 2088 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     526           10   -18274.184            0   -18272.883    3615.8507 
+     550           10   -18274.336            0   -18273.035   -246.00655 
+Loop time of 0.283344 on 12 procs for 24 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1842107     -18274.3362842     -18274.3362842
+  Force two-norm initial, final = 1.81754 0.133928
+  Force max component initial, final = 0.174769 0.0119795
+  Final line search alpha, max atom move = 4.76837e-07 5.71225e-09
+  Iterations, force evaluations = 24 91
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.097498   | 0.10395    | 0.11461    |   1.5 | 36.69
+Kspace  | 0.15678    | 0.16064    | 0.1648     |   0.6 | 56.69
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0088432  | 0.017357   | 0.021919   |   2.9 |  6.13
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001404   |            |       |  0.50
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2610 ave 2637 max 2588 min
+Histogram: 3 2 1 0 0 1 2 0 0 3
+Neighs:    18720.7 ave 19659 max 17450 min
+Histogram: 1 0 0 0 3 3 2 2 0 1
+
+Total # of neighbors = 224648
+Ave neighs/atom = 222.865
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0.0388306 0 0) to (23.2618 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365078
+  estimated absolute RMS force accuracy = 1.92793e-05
+  estimated relative force accuracy = 1.33888e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     550           10   -18274.295            0   -18272.994     13.71953 
+     568           10   -18274.361            0   -18273.059   -2444.9197 
+Loop time of 0.356979 on 12 procs for 18 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2952069     -18274.3607371     -18274.3607371
+  Force two-norm initial, final = 1.20422 0.114896
+  Force max component initial, final = 0.115407 0.0133906
+  Final line search alpha, max atom move = 4.76837e-07 6.38513e-09
+  Iterations, force evaluations = 18 115
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12159    | 0.13062    | 0.14517    |   1.8 | 36.59
+Kspace  | 0.19822    | 0.20236    | 0.20729    |   0.6 | 56.69
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.011279   | 0.02233    | 0.028183   |   3.3 |  6.26
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001667   |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2609.5 ave 2636 max 2588 min
+Histogram: 3 2 1 0 0 1 2 0 0 3
+Neighs:    18687.9 ave 19625 max 17418 min
+Histogram: 1 0 0 0 3 3 2 2 0 1
+
+Total # of neighbors = 224255
+Ave neighs/atom = 222.475
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0.0194211 0 0) to (23.2813 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365066
+  estimated absolute RMS force accuracy = 1.9345e-05
+  estimated relative force accuracy = 1.34344e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     568           10    -18274.32            0   -18273.018   -3548.0401 
+     583           10   -18274.337            0   -18273.035   -4728.8945 
+Loop time of 0.209021 on 12 procs for 15 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.3200557     -18274.3371298     -18274.3371298
+  Force two-norm initial, final = 0.598232 0.0711073
+  Force max component initial, final = 0.0571395 0.00760072
+  Final line search alpha, max atom move = 1.90735e-06 1.44972e-08
+  Iterations, force evaluations = 15 67
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.071257   | 0.07634    | 0.084409   |   1.4 | 36.52
+Kspace  | 0.11552    | 0.11873    | 0.12079    |   0.5 | 56.80
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0067556  | 0.012886   | 0.016224   |   2.4 |  6.16
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001066   |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2606.83 ave 2632 max 2588 min
+Histogram: 3 0 3 0 0 2 1 0 1 2
+Neighs:    18659.4 ave 19592 max 17387 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223913
+Ave neighs/atom = 222.136
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     583           10   -18274.266            0   -18272.964   -7075.5282 
+     585           10   -18274.266            0   -18272.964   -7073.1967 
+Loop time of 0.0798458 on 12 procs for 2 steps with 1008 atoms
+
+99.3% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2656438     -18274.2656648     -18274.2656648
+  Force two-norm initial, final = 0.00480711 0.00321821
+  Force max component initial, final = 0.000370914 0.00031484
+  Final line search alpha, max atom move = 0.000976562 3.07461e-07
+  Iterations, force evaluations = 2 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.027326   | 0.02928    | 0.03244    |   0.9 | 36.67
+Kspace  | 0.044111   | 0.045286   | 0.046477   |   0.3 | 56.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0024805  | 0.0049146  | 0.0061784  |   1.5 |  6.16
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0003656  |            |       |  0.46
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.6 ave 19559 max 17364 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223567
+Ave neighs/atom = 221.793
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (-0.0194211 0 0) to (23.3201 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365044
+  estimated absolute RMS force accuracy = 1.94944e-05
+  estimated relative force accuracy = 1.35381e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     585           10    -18274.13            0   -18272.829    -10566.33 
+     596           10   -18274.145            0   -18272.843   -9449.0338 
+Loop time of 0.189247 on 12 procs for 11 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1304899     -18274.1451417     -18274.1451417
+  Force two-norm initial, final = 0.594345 0.0982055
+  Force max component initial, final = 0.0563078 0.0103718
+  Final line search alpha, max atom move = 9.53674e-07 9.89131e-09
+  Iterations, force evaluations = 11 61
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.064411   | 0.069071   | 0.076197   |   1.3 | 36.50
+Kspace  | 0.10463    | 0.10733    | 0.10956    |   0.5 | 56.71
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0059862  | 0.011951   | 0.015076   |   2.4 |  6.32
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000897   |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2600.33 ave 2626 max 2582 min
+Histogram: 3 2 1 0 0 2 1 1 0 2
+Neighs:    18599.4 ave 19526 max 17329 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223193
+Ave neighs/atom = 221.422
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (-0.0388306 0 0) to (23.3395 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365032
+  estimated absolute RMS force accuracy = 1.95788e-05
+  estimated relative force accuracy = 1.35968e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     596           10   -18273.911            0   -18272.609   -14017.638 
+     600           10   -18273.958            0   -18272.657   -12245.802 
+     612           10   -18273.973            0   -18272.672   -11664.369 
+Loop time of 0.226159 on 12 procs for 16 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.9106991     -18273.9731741     -18273.9731741
+  Force two-norm initial, final = 1.18027 0.125788
+  Force max component initial, final = 0.111455 0.0126204
+  Final line search alpha, max atom move = 4.76837e-07 6.01788e-09
+  Iterations, force evaluations = 16 73
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.077201   | 0.082405   | 0.091235   |   1.5 | 36.44
+Kspace  | 0.12589    | 0.12854    | 0.13181    |   0.5 | 56.83
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0070672  | 0.014087   | 0.017788   |   2.6 |  6.23
+Output  | 2.408e-05  | 2.5153e-05 | 3.2187e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001105   |            |       |  0.49
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2599.33 ave 2626 max 2581 min
+Histogram: 5 0 1 0 0 2 1 1 0 2
+Neighs:    18569.7 ave 19486 max 17304 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 222836
+Ave neighs/atom = 221.067
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (-0.0582517 0 0) to (23.3589 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365021
+  estimated absolute RMS force accuracy = 1.96704e-05
+  estimated relative force accuracy = 1.36604e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     612           10   -18273.608            0   -18272.306   -17434.068 
+     632           10   -18273.753            0   -18272.452   -13847.562 
+Loop time of 0.251699 on 12 procs for 20 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.6078475     -18273.7531549     -18273.7531549
+  Force two-norm initial, final = 1.76015 0.141328
+  Force max component initial, final = 0.165641 0.0182579
+  Final line search alpha, max atom move = 4.76837e-07 8.70602e-09
+  Iterations, force evaluations = 20 81
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.085829   | 0.092048   | 0.1016     |   1.5 | 36.57
+Kspace  | 0.13975    | 0.14282    | 0.14559    |   0.5 | 56.74
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0081489  | 0.015525   | 0.019525   |   2.6 |  6.17
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001308   |            |       |  0.52
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2599.33 ave 2626 max 2581 min
+Histogram: 5 0 1 0 0 2 1 1 0 2
+Neighs:    18539.2 ave 19459 max 17278 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 222470
+Ave neighs/atom = 220.704
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0.0582517 0) to (23.3007 23.2424 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365089
+  estimated absolute RMS force accuracy = 1.92191e-05
+  estimated relative force accuracy = 1.33469e-06
+  KSpace vectors: actual max1d max3d = 2088 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     632           10   -18274.333            0   -18273.031    3589.3865 
+     648           10   -18274.485            0   -18273.183    47.402494 
+Loop time of 0.233571 on 12 procs for 16 steps with 1008 atoms
+
+99.7% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.3330457     -18274.4845774     -18274.4845774
+  Force two-norm initial, final = 1.77805 0.194604
+  Force max component initial, final = 0.161993 0.0196026
+  Final line search alpha, max atom move = 2.38419e-07 4.67362e-09
+  Iterations, force evaluations = 16 75
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.080261   | 0.085953   | 0.094542   |   1.4 | 36.80
+Kspace  | 0.12914    | 0.13234    | 0.13565    |   0.5 | 56.66
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0074341  | 0.014153   | 0.017808   |   2.5 |  6.06
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001127   |            |       |  0.48
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2615.92 ave 2643 max 2595 min
+Histogram: 1 4 0 0 2 2 0 1 0 2
+Neighs:    18722.8 ave 19643 max 17449 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 224673
+Ave neighs/atom = 222.89
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0.0388306 0) to (23.3007 23.2618 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365078
+  estimated absolute RMS force accuracy = 1.92793e-05
+  estimated relative force accuracy = 1.33888e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     648           10   -18274.398            0   -18273.096   -4.8368106 
+     650           10   -18274.435            0   -18273.133   -1289.2023 
+     672           10   -18274.467            0   -18273.165   -2450.6579 
+Loop time of 0.374985 on 12 procs for 24 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.3975163     -18274.4667482     -18274.4667482
+  Force two-norm initial, final = 1.17813 0.0798056
+  Force max component initial, final = 0.107006 0.00647004
+  Final line search alpha, max atom move = 1.90735e-06 1.23406e-08
+  Iterations, force evaluations = 24 121
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12753    | 0.13719    | 0.15177    |   1.9 | 36.59
+Kspace  | 0.20735    | 0.21268    | 0.21823    |   0.7 | 56.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.012076   | 0.023234   | 0.029252   |   3.3 |  6.20
+Output  | 2.408e-05  | 2.5074e-05 | 3.4094e-05 |   0.1 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.00185    |            |       |  0.49
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2610.67 ave 2636 max 2592 min
+Histogram: 2 3 1 0 1 1 1 1 0 2
+Neighs:    18693.2 ave 19614 max 17415 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 224318
+Ave neighs/atom = 222.538
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0.0194211 0) to (23.3007 23.2813 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365066
+  estimated absolute RMS force accuracy = 1.9345e-05
+  estimated relative force accuracy = 1.34344e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     672           10   -18274.374            0   -18273.072   -3558.0113 
+     686           10   -18274.392            0    -18273.09   -4701.0224 
+Loop time of 0.205308 on 12 procs for 14 steps with 1008 atoms
+
+100.2% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.3736841     -18274.3916774     -18274.3916774
+  Force two-norm initial, final = 0.585271 0.0735684
+  Force max component initial, final = 0.0531097 0.0106352
+  Final line search alpha, max atom move = 1.90735e-06 2.0285e-08
+  Iterations, force evaluations = 14 65
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.069149   | 0.074254   | 0.083866   |   1.6 | 36.17
+Kspace  | 0.1136     | 0.11701    | 0.12021    |   0.6 | 56.99
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0067925  | 0.012953   | 0.016288   |   2.4 |  6.31
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001093   |            |       |  0.53
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2607.67 ave 2631 max 2589 min
+Histogram: 3 1 2 0 0 1 2 1 0 2
+Neighs:    18663.5 ave 19585 max 17393 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223962
+Ave neighs/atom = 222.185
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     686           10   -18274.266            0   -18272.964   -7075.5282 
+     688           10   -18274.266            0   -18272.964   -7073.1967 
+Loop time of 0.0796841 on 12 procs for 2 steps with 1008 atoms
+
+100.3% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2656438     -18274.2656648     -18274.2656648
+  Force two-norm initial, final = 0.00480711 0.00321821
+  Force max component initial, final = 0.000370914 0.00031484
+  Final line search alpha, max atom move = 0.000976562 3.07461e-07
+  Iterations, force evaluations = 2 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.027143   | 0.029042   | 0.032296   |   0.8 | 36.45
+Kspace  | 0.044523   | 0.045368   | 0.046      |   0.2 | 56.93
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0024989  | 0.004901   | 0.0061469  |   1.5 |  6.15
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0003739  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.6 ave 19559 max 17364 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223567
+Ave neighs/atom = 221.793
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 -0.0194211 0) to (23.3007 23.3201 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365044
+  estimated absolute RMS force accuracy = 1.94944e-05
+  estimated relative force accuracy = 1.35381e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     688           10   -18274.073            0   -18272.772    -10555.38 
+     700           10   -18274.089            0   -18272.788   -9416.9623 
+     702           10    -18274.09            0   -18272.788   -9405.4145 
+Loop time of 0.20244 on 12 procs for 14 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0731736     -18274.0896389     -18274.0896389
+  Force two-norm initial, final = 0.581829 0.0737702
+  Force max component initial, final = 0.0521739 0.00660688
+  Final line search alpha, max atom move = 1.90735e-06 1.26016e-08
+  Iterations, force evaluations = 14 65
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.068325   | 0.073757   | 0.08183    |   1.4 | 36.43
+Kspace  | 0.11184    | 0.11472    | 0.11701    |   0.5 | 56.67
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0063689  | 0.012917   | 0.016365   |   2.6 |  6.38
+Output  | 2.408e-05  | 2.4994e-05 | 3.314e-05  |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001025   |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2599.42 ave 2622 max 2582 min
+Histogram: 3 1 2 0 1 1 0 2 0 2
+Neighs:    18599.2 ave 19529 max 17330 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223191
+Ave neighs/atom = 221.42
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 -0.0388306 0) to (23.3007 23.3395 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365032
+  estimated absolute RMS force accuracy = 1.95788e-05
+  estimated relative force accuracy = 1.35968e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     702           10   -18273.801            0     -18272.5   -13996.751 
+     720           10   -18273.865            0   -18272.563   -11639.673 
+Loop time of 0.232749 on 12 procs for 18 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.8012154     -18273.8645672     -18273.8645672
+  Force two-norm initial, final = 1.15566 0.113791
+  Force max component initial, final = 0.103279 0.0119601
+  Final line search alpha, max atom move = 9.53674e-07 1.1406e-08
+  Iterations, force evaluations = 18 75
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.079133   | 0.084825   | 0.093894   |   1.5 | 36.44
+Kspace  | 0.12893    | 0.13241    | 0.13568    |   0.6 | 56.89
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0073731  | 0.01434    | 0.018093   |   2.6 |  6.16
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001177   |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2594 ave 2615 max 2575 min
+Histogram: 1 2 1 2 0 1 1 1 2 1
+Neighs:    18567.3 ave 19493 max 17303 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 222808
+Ave neighs/atom = 221.04
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 -0.0582517 0) to (23.3007 23.3589 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365021
+  estimated absolute RMS force accuracy = 1.96704e-05
+  estimated relative force accuracy = 1.36604e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     720           10   -18273.445            0   -18272.143   -17402.847 
+     733           10   -18273.584            0   -18272.283   -14036.714 
+Loop time of 0.22282 on 12 procs for 13 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.4447964     -18273.5843569     -18273.5843569
+  Force two-norm initial, final = 1.72366 0.241482
+  Force max component initial, final = 0.15364 0.020457
+  Final line search alpha, max atom move = 1.19209e-07 2.43866e-09
+  Iterations, force evaluations = 13 71
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.074888   | 0.080583   | 0.090468   |   1.5 | 36.17
+Kspace  | 0.12392    | 0.12739    | 0.13068    |   0.6 | 57.17
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0073118  | 0.013697   | 0.017207   |   2.4 |  6.15
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001148   |            |       |  0.52
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2587.25 ave 2608 max 2562 min
+Histogram: 1 1 1 1 2 0 0 4 0 2
+Neighs:    18537 ave 19448 max 17271 min
+Histogram: 1 0 0 0 3 3 0 4 0 1
+
+Total # of neighbors = 222444
+Ave neighs/atom = 220.679
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0.0582517) to (23.3007 23.3007 23.2424) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365089
+  estimated absolute RMS force accuracy = 1.92191e-05
+  estimated relative force accuracy = 1.33469e-06
+  KSpace vectors: actual max1d max3d = 2088 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     733           10    -18274.28            0   -18272.979     3459.748 
+     750           10   -18274.436            0   -18273.134   -335.31242 
+     754           10   -18274.437            0   -18273.136   -401.84031 
+Loop time of 0.259166 on 12 procs for 21 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.280465     -18274.4372035     -18274.4372035
+  Force two-norm initial, final = 1.89136 0.159286
+  Force max component initial, final = 0.151393 0.0161196
+  Final line search alpha, max atom move = 4.76837e-07 7.68643e-09
+  Iterations, force evaluations = 21 83
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.088593   | 0.094452   | 0.10536    |   1.6 | 36.44
+Kspace  | 0.14406    | 0.14724    | 0.15078    |   0.6 | 56.81
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0082676  | 0.016154   | 0.020447   |   2.8 |  6.23
+Output  | 2.2888e-05 | 2.4358e-05 | 3.2902e-05 |   0.1 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001295   |            |       |  0.50
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2612.58 ave 2635 max 2595 min
+Histogram: 3 2 1 0 0 2 1 0 1 2
+Neighs:    18719.9 ave 19650 max 17446 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 224639
+Ave neighs/atom = 222.856
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0.0388306) to (23.3007 23.3007 23.2618) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365078
+  estimated absolute RMS force accuracy = 1.92793e-05
+  estimated relative force accuracy = 1.33888e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     754           10   -18274.358            0   -18273.057   -89.730043 
+     773           10   -18274.424            0   -18273.123   -2632.4503 
+Loop time of 0.246975 on 12 procs for 19 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.3583881     -18274.4243562     -18274.4243562
+  Force two-norm initial, final = 1.25322 0.127669
+  Force max component initial, final = 0.100006 0.0123977
+  Final line search alpha, max atom move = 4.76837e-07 5.91169e-09
+  Iterations, force evaluations = 19 79
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.083509   | 0.090262   | 0.10123    |   1.5 | 36.55
+Kspace  | 0.13698    | 0.14076    | 0.14483    |   0.6 | 56.99
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0076332  | 0.014775   | 0.018617   |   2.6 |  5.98
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001175   |            |       |  0.48
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2611.33 ave 2634 max 2595 min
+Histogram: 3 3 0 0 0 2 1 0 1 2
+Neighs:    18689.2 ave 19617 max 17414 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 224271
+Ave neighs/atom = 222.491
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0.0194211) to (23.3007 23.3007 23.2813) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365066
+  estimated absolute RMS force accuracy = 1.9345e-05
+  estimated relative force accuracy = 1.34344e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     773           10   -18274.353            0   -18273.052   -3600.0853 
+     781           10   -18274.367            0   -18273.065   -4660.1256 
+Loop time of 0.184508 on 12 procs for 8 steps with 1008 atoms
+
+99.6% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.3534774     -18274.3668473     -18274.3668473
+  Force two-norm initial, final = 0.622624 0.145121
+  Force max component initial, final = 0.0495403 0.0200386
+  Final line search alpha, max atom move = 4.76837e-07 9.55516e-09
+  Iterations, force evaluations = 8 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062921   | 0.067302   | 0.075042   |   1.3 | 36.48
+Kspace  | 0.10223    | 0.10489    | 0.10714    |   0.5 | 56.85
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0058348  | 0.011467   | 0.014425   |   2.3 |  6.22
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008444  |            |       |  0.46
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2604.58 ave 2629 max 2587 min
+Histogram: 3 2 1 0 0 2 1 1 0 2
+Neighs:    18660.1 ave 19587 max 17391 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223921
+Ave neighs/atom = 222.144
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     781           10   -18274.266            0   -18272.964   -7075.5282 
+     783           10   -18274.266            0   -18272.964   -7073.1967 
+Loop time of 0.0803027 on 12 procs for 2 steps with 1008 atoms
+
+99.5% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2656438     -18274.2656648     -18274.2656648
+  Force two-norm initial, final = 0.00480711 0.00321821
+  Force max component initial, final = 0.000370914 0.00031484
+  Final line search alpha, max atom move = 0.000976562 3.07461e-07
+  Iterations, force evaluations = 2 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.027551   | 0.029569   | 0.03257    |   0.8 | 36.82
+Kspace  | 0.044665   | 0.045476   | 0.046213   |   0.3 | 56.63
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0025616  | 0.004884   | 0.0061393  |   1.5 |  6.08
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0003741  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.6 ave 19559 max 17364 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223567
+Ave neighs/atom = 221.793
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 -0.0194211) to (23.3007 23.3007 23.3201) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365044
+  estimated absolute RMS force accuracy = 1.94944e-05
+  estimated relative force accuracy = 1.35381e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     783           10   -18274.095            0   -18272.793   -10514.121 
+     793           10   -18274.113            0   -18272.812   -9371.5147 
+Loop time of 0.190807 on 12 procs for 10 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0945632     -18274.1133799     -18274.1133799
+  Force two-norm initial, final = 0.618627 0.118318
+  Force max component initial, final = 0.0488261 0.0126176
+  Final line search alpha, max atom move = 4.76837e-07 6.01652e-09
+  Iterations, force evaluations = 10 61
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.063992   | 0.069189   | 0.077825   |   1.4 | 36.26
+Kspace  | 0.10623    | 0.10886    | 0.11097    |   0.5 | 57.05
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0059159  | 0.011898   | 0.01509    |   2.4 |  6.24
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008635  |            |       |  0.45
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2601.08 ave 2625 max 2585 min
+Histogram: 5 0 1 0 1 1 1 1 0 2
+Neighs:    18598.5 ave 19521 max 17329 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223182
+Ave neighs/atom = 221.411
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 -0.0388306) to (23.3007 23.3007 23.3395) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365032
+  estimated absolute RMS force accuracy = 1.95788e-05
+  estimated relative force accuracy = 1.35968e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     793           10   -18273.842            0   -18272.541   -13914.349 
+     800           10   -18273.901            0     -18272.6   -11782.149 
+     828           10   -18273.925            0   -18272.623   -11026.172 
+Loop time of 0.457041 on 12 procs for 35 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18273.8421851     -18273.9249098     -18273.9249098
+  Force two-norm initial, final = 1.22869 0.0993393
+  Force max component initial, final = 0.0967021 0.0094099
+  Final line search alpha, max atom move = 9.53674e-07 8.97398e-09
+  Iterations, force evaluations = 35 147
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.15441    | 0.16594    | 0.18613    |   2.2 | 36.31
+Kspace  | 0.25404    | 0.26045    | 0.26607    |   0.8 | 56.99
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.014619   | 0.028327   | 0.035607   |   3.6 |  6.20
+Output  | 2.2888e-05 | 2.3762e-05 | 3.0994e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.002304   |            |       |  0.50
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2598.33 ave 2624 max 2580 min
+Histogram: 3 2 1 0 1 1 1 1 0 2
+Neighs:    18566.8 ave 19490 max 17303 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 222801
+Ave neighs/atom = 221.033
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 -0.0582517) to (23.3007 23.3007 23.3589) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365021
+  estimated absolute RMS force accuracy = 1.96704e-05
+  estimated relative force accuracy = 1.36604e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     828           10   -18273.511            0   -18272.209   -17281.104 
+     850           10   -18273.679            0   -18272.377   -13203.685 
+     861           10   -18273.695            0   -18272.393   -12954.319 
+Loop time of 0.336389 on 12 procs for 33 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+          -18273.51062     -18273.6950659     -18273.6950659
+  Force two-norm initial, final = 1.83257 0.196292
+  Force max component initial, final = 0.143756 0.0164982
+  Final line search alpha, max atom move = 1.52188e-07 2.51083e-09
+  Iterations, force evaluations = 33 109
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.1145     | 0.12294    | 0.13569    |   1.7 | 36.55
+Kspace  | 0.18739    | 0.19084    | 0.19604    |   0.6 | 56.73
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.010582   | 0.020874   | 0.026303   |   3.2 |  6.21
+Output  | 2.408e-05  | 2.5392e-05 | 3.314e-05  |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001706   |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2596.83 ave 2623 max 2580 min
+Histogram: 4 1 1 0 1 1 2 0 0 2
+Neighs:    18538.5 ave 19472 max 17271 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 222462
+Ave neighs/atom = 220.696
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (-0.116503 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     861           10   -18274.041            0   -18272.739   -7053.2508 
+     887           10   -18274.107            0   -18272.805   -6929.0171 
+Loop time of 0.289739 on 12 procs for 26 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0405273     -18274.1066971     -18274.1066971
+  Force two-norm initial, final = 1.23592 0.0789641
+  Force max component initial, final = 0.123911 0.0117248
+  Final line search alpha, max atom move = 1.90735e-06 2.23632e-08
+  Iterations, force evaluations = 26 93
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.098247   | 0.10565    | 0.11825    |   1.7 | 36.46
+Kspace  | 0.1609     | 0.16476    | 0.16817    |   0.6 | 56.87
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0091395  | 0.017846   | 0.022483   |   2.9 |  6.16
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001479   |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18633.6 ave 19560 max 17372 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223603
+Ave neighs/atom = 221.828
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (-0.077661 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     887           10   -18274.146            0   -18272.844   -7065.7875 
+     896           10   -18274.171            0    -18272.87   -7018.0428 
+Loop time of 0.184451 on 12 procs for 9 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1456144     -18274.1713305     -18274.1713305
+  Force two-norm initial, final = 0.823854 0.14398
+  Force max component initial, final = 0.0825135 0.0137328
+  Final line search alpha, max atom move = 4.76837e-07 6.54833e-09
+  Iterations, force evaluations = 9 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.06334    | 0.067554   | 0.075131   |   1.3 | 36.62
+Kspace  | 0.1026     | 0.10473    | 0.10721    |   0.5 | 56.78
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0058689  | 0.011292   | 0.014203   |   2.3 |  6.12
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008728  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18631.2 ave 19558 max 17358 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223574
+Ave neighs/atom = 221.8
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (-0.038842 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     896           10   -18274.222            0    -18272.92   -7073.4216 
+     900           10   -18274.226            0   -18272.925   -7053.9441 
+     903           10   -18274.228            0   -18272.926   -7046.9869 
+Loop time of 0.165456 on 12 procs for 7 steps with 1008 atoms
+
+100.3% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.221501     -18274.2278104     -18274.2278104
+  Force two-norm initial, final = 0.412053 0.0940505
+  Force max component initial, final = 0.0412514 0.0116881
+  Final line search alpha, max atom move = 9.53674e-07 1.11466e-08
+  Iterations, force evaluations = 7 53
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.056201   | 0.060466   | 0.066702   |   1.2 | 36.55
+Kspace  | 0.091626   | 0.09391    | 0.096382   |   0.5 | 56.76
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0053511  | 0.010274   | 0.012937   |   2.2 |  6.21
+Output  | 2.3842e-05 | 2.4895e-05 | 3.2902e-05 |   0.0 |  0.02
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000781   |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18631.2 ave 19558 max 17361 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223575
+Ave neighs/atom = 221.801
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     903           10   -18274.266            0   -18272.964   -7075.5282 
+     905           10   -18274.266            0   -18272.964   -7073.1967 
+Loop time of 0.08036 on 12 procs for 2 steps with 1008 atoms
+
+100.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2656438     -18274.2656648     -18274.2656648
+  Force two-norm initial, final = 0.00480711 0.00321821
+  Force max component initial, final = 0.000370914 0.00031484
+  Final line search alpha, max atom move = 0.000976562 3.07461e-07
+  Iterations, force evaluations = 2 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.026951   | 0.028983   | 0.032592   |   1.0 | 36.07
+Kspace  | 0.044518   | 0.045726   | 0.046569   |   0.3 | 56.90
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0026369  | 0.0052494  | 0.0066381  |   1.6 |  6.53
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0004021  |            |       |  0.50
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.6 ave 19559 max 17364 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223567
+Ave neighs/atom = 221.793
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0.038842 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     905           10   -18274.285            0   -18272.984   -7073.8599 
+     912           10    -18274.29            0   -18272.988    -7087.169 
+Loop time of 0.28357 on 12 procs for 7 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2853503     -18274.2895116     -18274.2895116
+  Force two-norm initial, final = 0.411921 0.0844754
+  Force max component initial, final = 0.041008 0.00875191
+  Final line search alpha, max atom move = 9.53674e-07 8.34647e-09
+  Iterations, force evaluations = 7 91
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.095958   | 0.10312    | 0.11566    |   1.7 | 36.36
+Kspace  | 0.1579     | 0.1616     | 0.16555    |   0.6 | 56.99
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0088212  | 0.017629   | 0.022237   |   2.9 |  6.22
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001223   |            |       |  0.43
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18629.1 ave 19553 max 17362 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223549
+Ave neighs/atom = 221.775
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0.077661 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     912           10   -18274.273            0   -18272.972   -7066.6927 
+     922           10   -18274.297            0   -18272.995    -7115.554 
+Loop time of 0.196121 on 12 procs for 10 steps with 1008 atoms
+
+99.7% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2734863     -18274.2971318     -18274.2971318
+  Force two-norm initial, final = 0.823654 0.130563
+  Force max component initial, final = 0.0819719 0.0193627
+  Final line search alpha, max atom move = 4.76837e-07 9.23284e-09
+  Iterations, force evaluations = 10 63
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.067324   | 0.072001   | 0.079375   |   1.3 | 36.71
+Kspace  | 0.10801    | 0.11133    | 0.11411    |   0.5 | 56.77
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0063019  | 0.011844   | 0.014834   |   2.3 |  6.04
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009439  |            |       |  0.48
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18627.2 ave 19548 max 17357 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223527
+Ave neighs/atom = 221.753
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0.116503 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     922           10   -18274.232            0    -18272.93   -7054.4137 
+     942           10   -18274.291            0   -18272.989   -7169.9288 
+Loop time of 0.362154 on 12 procs for 20 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2317589     -18274.2905643     -18274.2905643
+  Force two-norm initial, final = 1.23561 0.0943845
+  Force max component initial, final = 0.122835 0.00853352
+  Final line search alpha, max atom move = 9.53674e-07 8.1382e-09
+  Iterations, force evaluations = 20 117
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12323    | 0.13234    | 0.14696    |   1.9 | 36.54
+Kspace  | 0.20053    | 0.20569    | 0.2095     |   0.7 | 56.80
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.011466   | 0.022426   | 0.02823    |   3.3 |  6.19
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001696   |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18626.8 ave 19542 max 17352 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223522
+Ave neighs/atom = 221.748
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 -0.116503 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     942           10   -18274.144            0   -18272.842   -7005.2037 
+     950           10   -18274.194            0   -18272.893   -7065.9263 
+     960           10     -18274.2            0   -18272.899   -7082.0135 
+Loop time of 0.363358 on 12 procs for 18 steps with 1008 atoms
+
+100.0% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1439153     -18274.2002548     -18274.2002548
+  Force two-norm initial, final = 1.24084 0.0911729
+  Force max component initial, final = 0.10906 0.00898407
+  Final line search alpha, max atom move = 9.53674e-07 8.56788e-09
+  Iterations, force evaluations = 18 117
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12449    | 0.13313    | 0.14755    |   1.8 | 36.64
+Kspace  | 0.20155    | 0.20572    | 0.20975    |   0.6 | 56.62
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.011503   | 0.022656   | 0.028581   |   3.3 |  6.24
+Output  | 2.5034e-05 | 2.5849e-05 | 3.3855e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001829   |            |       |  0.50
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18628 ave 19560 max 17357 min
+Histogram: 1 0 0 0 3 3 2 2 0 1
+
+Total # of neighbors = 223536
+Ave neighs/atom = 221.762
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 -0.077661 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     960           10   -18274.212            0    -18272.91   -7033.3737 
+     973           10   -18274.235            0   -18272.934   -7075.9375 
+Loop time of 0.202536 on 12 procs for 13 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2115272     -18274.2353446     -18274.2353446
+  Force two-norm initial, final = 0.827225 0.0866739
+  Force max component initial, final = 0.0726744 0.00939551
+  Final line search alpha, max atom move = 9.53674e-07 8.96026e-09
+  Iterations, force evaluations = 13 65
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.068673   | 0.073945   | 0.082126   |   1.4 | 36.51
+Kspace  | 0.11252    | 0.1153     | 0.11771    |   0.5 | 56.93
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0064552  | 0.012312   | 0.015495   |   2.4 |  6.08
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009808  |            |       |  0.48
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18629 ave 19565 max 17357 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223548
+Ave neighs/atom = 221.774
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 -0.038842 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     973           10   -18274.252            0    -18272.95    -7056.684 
+     984           10   -18274.259            0   -18272.958   -7073.3754 
+Loop time of 0.177145 on 12 procs for 11 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2516331     -18274.2594717     -18274.2594717
+  Force two-norm initial, final = 0.413825 0.0545529
+  Force max component initial, final = 0.0363562 0.00547486
+  Final line search alpha, max atom move = 3.8147e-06 2.08849e-08
+  Iterations, force evaluations = 11 57
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.060007   | 0.064472   | 0.071439   |   1.3 | 36.40
+Kspace  | 0.098305   | 0.10047    | 0.10252    |   0.4 | 56.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.005579   | 0.011362   | 0.014343   |   2.4 |  6.41
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008383  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18628.8 ave 19560 max 17359 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223545
+Ave neighs/atom = 221.771
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     984           10   -18274.266            0   -18272.964   -7075.5282 
+     986           10   -18274.266            0   -18272.964   -7073.1967 
+Loop time of 0.0800922 on 12 procs for 2 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2656438     -18274.2656648     -18274.2656648
+  Force two-norm initial, final = 0.00480711 0.00321821
+  Force max component initial, final = 0.000370914 0.00031484
+  Final line search alpha, max atom move = 0.000976562 3.07461e-07
+  Iterations, force evaluations = 2 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.026912   | 0.029014   | 0.032599   |   1.0 | 36.23
+Kspace  | 0.044467   | 0.045655   | 0.046798   |   0.3 | 57.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0025556  | 0.0050484  | 0.0063691  |   1.6 |  6.30
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0003747  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.6 ave 19559 max 17364 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223567
+Ave neighs/atom = 221.793
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0.038842 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     986           10   -18274.251            0    -18272.95   -7089.1772 
+     993           10   -18274.258            0   -18272.956   -7072.2336 
+Loop time of 0.166037 on 12 procs for 7 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2511685      -18274.257599      -18274.257599
+  Force two-norm initial, final = 0.41381 0.0865415
+  Force max component initial, final = 0.0362144 0.0093665
+  Final line search alpha, max atom move = 9.53674e-07 8.93259e-09
+  Iterations, force evaluations = 7 53
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.056459   | 0.060528   | 0.066857   |   1.3 | 36.45
+Kspace  | 0.091739   | 0.094155   | 0.096527   |   0.4 | 56.71
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0054836  | 0.010512   | 0.013248   |   2.2 |  6.33
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008421  |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18628.8 ave 19547 max 17358 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223545
+Ave neighs/atom = 221.771
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0.077661 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+     993           10    -18274.21            0   -18272.908   -7098.2436 
+    1000           10   -18274.232            0    -18272.93   -7069.1166 
+    1002           10   -18274.232            0   -18272.931   -7059.9817 
+Loop time of 0.184077 on 12 procs for 9 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2099712     -18274.2321778     -18274.2321778
+  Force two-norm initial, final = 0.827493 0.135981
+  Force max component initial, final = 0.0724174 0.0115243
+  Final line search alpha, max atom move = 4.76837e-07 5.49521e-09
+  Iterations, force evaluations = 9 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062984   | 0.067402   | 0.074243   |   1.3 | 36.62
+Kspace  | 0.10166    | 0.10429    | 0.10657    |   0.5 | 56.66
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0059853  | 0.011432   | 0.014357   |   2.3 |  6.21
+Output  | 2.3842e-05 | 2.5253e-05 | 3.1948e-05 |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009255  |            |       |  0.50
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18626.8 ave 19544 max 17362 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223522
+Ave neighs/atom = 221.748
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0.116503 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1002           10    -18274.14            0   -18272.838   -7102.1494 
+    1014           10   -18274.193            0   -18272.892   -7038.1974 
+Loop time of 0.318731 on 12 procs for 12 steps with 1008 atoms
+
+99.7% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1400885     -18274.1934806     -18274.1934806
+  Force two-norm initial, final = 1.24161 0.151644
+  Force max component initial, final = 0.108612 0.0131234
+  Final line search alpha, max atom move = 4.76837e-07 6.25772e-09
+  Iterations, force evaluations = 12 103
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10781    | 0.11633    | 0.1292     |   1.8 | 36.50
+Kspace  | 0.17621    | 0.18135    | 0.18584    |   0.7 | 56.90
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.010225   | 0.019588   | 0.024681   |   3.0 |  6.15
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001457   |            |       |  0.46
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18627.5 ave 19543 max 17362 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223530
+Ave neighs/atom = 221.756
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 0, applying strain of 0.995
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 -0.116503)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1014           10   -18274.201            0   -18272.899   -7051.8175 
+    1034           10   -18274.266            0   -18272.964   -7079.8038 
+Loop time of 0.252904 on 12 procs for 20 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2006921     -18274.2661048     -18274.2661048
+  Force two-norm initial, final = 1.25831 0.13099
+  Force max component initial, final = 0.121689 0.0116549
+  Final line search alpha, max atom move = 4.76837e-07 5.55751e-09
+  Iterations, force evaluations = 20 81
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.085724   | 0.091969   | 0.10214    |   1.6 | 36.37
+Kspace  | 0.13958    | 0.14341    | 0.14714    |   0.6 | 56.70
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0082548  | 0.016193   | 0.020412   |   2.8 |  6.40
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001336   |            |       |  0.53
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2603.5 ave 2628 max 2586 min
+Histogram: 3 2 1 0 0 2 1 1 0 2
+Neighs:    18629.2 ave 19546 max 17368 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223550
+Ave neighs/atom = 221.776
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 1, applying strain of 0.996667
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 -0.077661)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1034           10   -18274.249            0   -18272.947   -7064.1638 
+    1049           10   -18274.278            0   -18272.976   -7035.8303 
+Loop time of 0.213485 on 12 procs for 15 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.249046     -18274.2777188     -18274.2777188
+  Force two-norm initial, final = 0.838814 0.111742
+  Force max component initial, final = 0.0811126 0.0159829
+  Final line search alpha, max atom move = 9.53674e-07 1.52425e-08
+  Iterations, force evaluations = 15 69
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.072763   | 0.078305   | 0.085841   |   1.3 | 36.68
+Kspace  | 0.11813    | 0.12145    | 0.12392    |   0.5 | 56.89
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0068452  | 0.012688   | 0.015904   |   2.3 |  5.94
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001046   |            |       |  0.49
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18628.1 ave 19551 max 17367 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223537
+Ave neighs/atom = 221.763
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 2, applying strain of 0.998333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 -0.038842)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1049           10    -18274.27            0   -18272.969    -7071.941 
+    1050           10   -18274.273            0   -18272.971    -7063.205 
+    1055           10   -18274.276            0   -18272.975   -7031.4991 
+Loop time of 0.184265 on 12 procs for 6 steps with 1008 atoms
+
+100.1% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2702086     -18274.2761877     -18274.2761877
+  Force two-norm initial, final = 0.419667 0.120367
+  Force max component initial, final = 0.0405806 0.00973365
+  Final line search alpha, max atom move = 4.76837e-07 4.64136e-09
+  Iterations, force evaluations = 6 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062288   | 0.067052   | 0.075065   |   1.4 | 36.39
+Kspace  | 0.10272    | 0.1051     | 0.10742    |   0.5 | 57.04
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0056839  | 0.011284   | 0.014264   |   2.3 |  6.12
+Output  | 1.9073e-05 | 2.0365e-05 | 2.408e-05  |   0.0 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.000804   |            |       |  0.44
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18629.2 ave 19555 max 17365 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223550
+Ave neighs/atom = 221.776
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 3, applying strain of 1
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2084 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1055           10   -18274.266            0   -18272.964   -7075.5282 
+    1057           10   -18274.266            0   -18272.964   -7073.1967 
+Loop time of 0.0798814 on 12 procs for 2 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.2656438     -18274.2656648     -18274.2656648
+  Force two-norm initial, final = 0.00480711 0.00321821
+  Force max component initial, final = 0.000370914 0.00031484
+  Final line search alpha, max atom move = 0.000976562 3.07461e-07
+  Iterations, force evaluations = 2 25
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.026936   | 0.028987   | 0.032389   |   0.9 | 36.29
+Kspace  | 0.044433   | 0.045467   | 0.046401   |   0.3 | 56.92
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0025022  | 0.0050524  | 0.0063729  |   1.6 |  6.32
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0003749  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.6 ave 19559 max 17364 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223567
+Ave neighs/atom = 221.793
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 4, applying strain of 1.00167
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0.038842)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2082 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1057           10   -18274.234            0   -18272.932    -7074.461 
+    1066           10   -18274.241            0   -18272.939   -7098.2287 
+Loop time of 0.184173 on 12 procs for 9 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+         -18274.234025       -18274.24054       -18274.24054
+  Force two-norm initial, final = 0.419331 0.0911365
+  Force max component initial, final = 0.0404811 0.0118557
+  Final line search alpha, max atom move = 9.53674e-07 1.13065e-08
+  Iterations, force evaluations = 9 59
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.062701   | 0.066865   | 0.07489    |   1.4 | 36.31
+Kspace  | 0.10163    | 0.10473    | 0.10758    |   0.5 | 56.86
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0057211  | 0.011723   | 0.014806   |   2.5 |  6.37
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0008581  |            |       |  0.47
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18629.8 ave 19553 max 17358 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223558
+Ave neighs/atom = 221.784
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 5, applying strain of 1.00333
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0.077661)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2081 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1066           10   -18274.173            0   -18272.872   -7068.3543 
+    1078           10   -18274.201            0   -18272.899   -7112.7683 
+Loop time of 0.203229 on 12 procs for 12 steps with 1008 atoms
+
+99.8% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.1733369     -18274.2007205     -18274.2007205
+  Force two-norm initial, final = 0.838547 0.143009
+  Force max component initial, final = 0.0809548 0.0127012
+  Final line search alpha, max atom move = 4.76837e-07 6.05641e-09
+  Iterations, force evaluations = 12 65
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.069156   | 0.074132   | 0.082868   |   1.4 | 36.48
+Kspace  | 0.11291    | 0.11587    | 0.11887    |   0.5 | 57.02
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0064833  | 0.012252   | 0.015399   |   2.3 |  6.03
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.0009724  |            |       |  0.48
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2602.83 ave 2628 max 2585 min
+Histogram: 3 1 2 0 1 1 1 1 0 2
+Neighs:    18630.2 ave 19558 max 17349 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223562
+Ave neighs/atom = 221.788
+Neighbor list builds = 0
+Dangerous builds = 0
+CR_UPDATE- 23.300680	23.300680	23.300680	0.000000	0.000000	0.000000
+For k = 6, applying strain of 1.005
+Changing box ...
+  triclinic box = (0 0 0) to (23.3007 23.3007 23.3007) with tilt (0 0 0.116503)
+WARNING: Resetting reneighboring criteria during minimization (../min.cpp:168)
+Ewald initialization ...
+  G vector (1/distance) = 0.365055
+  estimated absolute RMS force accuracy = 1.94166e-05
+  estimated relative force accuracy = 1.34841e-06
+  KSpace vectors: actual max1d max3d = 2079 10 4630
+                  kxmax kymax kzmax  = 10 10 10
+Setting up cg style minimization ...
+  Unit style: metal
+Memory usage per processor = 4.56156 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+    1078           10   -18274.087            0   -18272.785   -7058.0258 
+    1100           10   -18274.156            0   -18272.855   -6967.6827 
+    1101           10   -18274.156            0   -18272.855   -6967.6827 
+Loop time of 0.269532 on 12 procs for 23 steps with 1008 atoms
+
+99.9% CPU use with 12 MPI tasks x no OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+        -18274.0871446     -18274.1563737     -18274.1563737
+  Force two-norm initial, final = 1.25803 0.148849
+  Force max component initial, final = 0.121443 0.012391
+  Final line search alpha, max atom move = 4.76837e-07 5.90848e-09
+  Iterations, force evaluations = 23 87
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.092102   | 0.099022   | 0.10913    |   1.6 | 36.74
+Kspace  | 0.14965    | 0.15258    | 0.15553    |   0.5 | 56.61
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0084894  | 0.016527   | 0.020834   |   2.8 |  6.13
+Output  | 2.4796e-05 | 2.569e-05  | 3.5048e-05 |   0.1 |  0.01
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.001375   |            |       |  0.51
+
+Nlocal:    84 ave 88 max 79 min
+Histogram: 1 0 0 1 2 2 5 0 0 1
+Nghost:    2603.5 ave 2628 max 2586 min
+Histogram: 3 2 1 0 0 2 1 1 0 2
+Neighs:    18629.2 ave 19563 max 17352 min
+Histogram: 1 0 0 0 3 3 1 3 0 1
+
+Total # of neighbors = 223551
+Ave neighs/atom = 221.777
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:01:28
+Done.

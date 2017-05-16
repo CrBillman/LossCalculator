@@ -1,0 +1,19 @@
+#!/bin/bash -l
+#
+#SBATCH --job-name=25_bs
+#SBATCH --account=mp261
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=jptrinastic@phys.ufl.edu
+#SBATCH -p shared
+#SBATCH --qos=normal
+#SBATCH -t 24:00:00
+#SBATCH -n 1
+#
+
+cd $SLURM_SUBMIT_DIR
+EXE="/home/chrisrbillman/relax_coupling_constant/dlpoly2014.X-mpi"
+
+srun -n 1 $EXE
+
+echo "Barrier Search Done."

@@ -1,0 +1,15 @@
+#!/bin/bash -l
+#
+#SBATCH --job-name=cc_test
+#SBATCH -t 4:00:00
+#SBATCH -n 1
+#
+cd $SLURM_SUBMIT_DIR
+
+module load intel openmpi
+
+EXE="/home/chrisrbillman/relax_coupling_constant/coup_DLPOLY.X-mpi"
+
+mpirun -n 1 $EXE
+
+echo "Done."

@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#PBS -N 37_coupl_cfg2
+#PBS -A mp261
+#PBS -o mpi.out
+#PBS -j oe
+#PBS -m a
+#PBS -M jptrinastic@phys.ufl.edu
+#PBS -q regular
+#PBS -l mppwidth=1
+#PBS -l walltime=0:10:00
+#PBS -V
+#
+
+cd $PBS_O_WORKDIR
+
+aprun -n 1 /global/u2/j/jptrinas/dl_class_internal_friction_FINAL_EDISON/nr_coupling_constant/nr_coup_DLPOLY.X-mpi
+
+echo "Done."
