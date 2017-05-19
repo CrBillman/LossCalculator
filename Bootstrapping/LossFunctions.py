@@ -53,7 +53,6 @@ def calculateLossFunction(data, density, omega, tMatrix, BoltzmannCorrection = F
             norm = norm + np.exp( (V1) / (kb * 1000))
         #norm = density / (norm)
         norm = density / float(nPts)
-        print norm, density / float(nPts)
     else:
         BCc = 1
         norm = density / float(nPts)
@@ -151,24 +150,6 @@ def CalcConfidenceInterval(original, losses, saveDistros = False, percentiles = 
         upper[i] = 2 * original[i] - np.percentile(tempMatrix, 2.5)
     return lower, upper
         
-def CrossValidateKernel(data):
-    bandwidths = np.logspace(-8,-2)
-    nfolds = 10
-    k_fold = KFold(nfolds)
-    score = []
-    for bandwidth in bandwidths:
-        score.append(0.0)
-        for (trainIndices, testIndices) in k_fold.split(data):
-            kde = neighbors.KernelDensity(bandwidth = bandwidth)
-            kde.fit(data[trainIndices])
-            score[-1] = score[-1] + kde.score(data[testIndices])
-        score[-1] = -score[-1] / nfolds
-        print bandwidth, score[-1]
-    plt.plot(bandwidths, score)
-    plt.yscale('log')
-    plt.show()
-    sys.exit()
-
 def GridSearchKDE(data):
     params = {'bandwidth': np.logspace(-3, 3, 50)}
     grid = GridSearchCV(neighbors.KernelDensity(), params)
@@ -183,27 +164,59 @@ def GridSearchKDE(data):
     print("best bandwidth: {0}".format(grid.best_estimator_.bandwidth))
     return grid.best_estimator_.bandwidth
 
-def CleanData(data, minT = 5, maxT = 300, nT = 300, maxT, constG = False, constY = False, constT = False, BoltzmannCorrection = True):
-    tlsdata = RemoveOutliers(tlsdata)
-    print "Using " + str(tlsdata.shape[0] + " TLS data points."
+def CleanData(data, constG = False, constY = False, constT = False, BoltzmannCorrection = True):
+    data = RemoveOutliers(data)
+    nPts = data.shape[0]
+    print "Using " + str(nPts) + " TLS data points."
     if not BoltzmannCorrection:
-        tlsdata = RemoveDuplicates(tlsdata)
-    nPts = tlsdata.shape[0]
-    tMatrix = np.linspace(minT,maxT, num = nT)
-    omega = 2 * np.pi * freq
-    density = nTLS / vol
+        data = RemoveDuplicates(data)
 
-    #Import data
-    tlsdata[:,5] = 1.0 / tlsdata[:,5] * 0.0101804979 * 1e-12
-    tlsdata[:,6] = 1.0 / tlsdata[:,6] * 0.0101804979 * 1e-12
+    #Convert data
+    data[:,5] = 1.0 / data[:,5] * 0.0101804979 * 1e-12
+    data[:,6] = 1.0 / data[:,6] * 0.0101804979 * 1e-12
+    data[:,[9,10, 11]] = data[:,[9, 10, 11]] * 6.3227e-7
     if constG:
-        tlsdata[:,7] = np.mean(tlsdata[:, 7])
-        #tlsdata[:, 7] = 1.7
+        data[:,7] = np.mean(data[:, 7])
     if constY:
-        tlsdata[:, [9,10, 11]] = np.mean(tlsdata[:,[9,10, 11]])
+        data[:, [9,10, 11]] = np.mean(data[:,[9,10, 11]])
     if constT:
-        tlsdata[:,5] = np.mean(tlsdata[:,5])
-        tlsdata[:,6] = np.mean(tlsdata[:,6])
-    tlsdata[:,[9,10, 11]] = tlsdata[:,[9, 10, 11]] * 6.3227e-7
+        data[:,5] = np.mean(data[:,5])
+        data[:,6] = np.mean(data[:,6])
 
-    return tlsdata
+    return data, nPts
+
+class tlsKDE():
+    kde = None
+    scaler = None
+
+    def __init__(self):
+        return
+
+    def fit(self, data, indices, bandwidth = None):
+        fitData = data[:, indices]
+        fitData, self.scaler = trans(fitData, scale = True)
+        if not bandwidth:
+            bandwidth = GridSearchKDE(fitData)
+        self.kde = neighbors.KernelDensity(bandwidth = bandwidth)
+        self.kde.fit(fitData)
+
+    def sample(self, nPts):
+        outData = self.kde.sample(n_samples = nPts)
+        outData = detrans(outData, self.scaler)
+        return outData
+
+def plotLoss(tMatrix, originalLoss, lLoss, uLoss):
+    plt.plot(tMatrix, originalLoss, color = 'blue', label = "Calculated Loss")
+    plt.plot(tMatrix, lLoss, color = 'orange', label = "95% Confidence Interval", lw = 2, ls = '--')
+    plt.plot(tMatrix, uLoss, color = 'orange', lw = 2, ls = '--')
+    plt.legend()
+    plt.ylim([0.0, 1.0])
+    plt.show()
+
+def saveLoss(tMatrix, originalLoss, lLoss, uLoss, fn):
+    prntMat = np.empty([tMatrix.shape[0], 4])
+    prntMat[:, 0] = tMatrix[:]
+    prntMat[:, 1] = originalLoss[:]
+    prntMat[:, 2] = lLoss[:]
+    prntMat[:, 3] = uLoss[:]
+    np.savetxt(fn, prntMat)

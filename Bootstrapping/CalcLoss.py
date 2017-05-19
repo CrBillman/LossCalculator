@@ -26,9 +26,9 @@ mpl.rcParams['axes.titleweight'] = 'bold'
 ###################################
 
 plotLoss = False
-bSamples = 100
+bSamples = 1000
 percentiles = True
-saveLoss = "Q_Percentiles50.dat"
+saveLoss = "Q_Percentiles1000.dat"
 plotConvergence = False
 plotDelta = False
 plotV = False
@@ -48,7 +48,7 @@ constY = False
 maxV = 0.1
 maxT = 300
 minT = 1
-#vol = 21. * 21. * 21.
+nT = 100
 vol = 20.94*20.94*20.94
 nTLS = 7.0
 freq = 1e3
@@ -56,80 +56,35 @@ freq = 1e3
 ###################################
 #  Staging for Loss Calculations  #
 ###################################
+omega = 2 * np.pi * freq
+density = nTLS / vol
+tMatrix = np.linspace(minT,maxT, num = nT)
+
+
 if len(sys.argv) > 1:
     suff = "_" + sys.argv[1]
 else:
     suff = ""
 
+
 tlsdata = np.loadtxt("pp-tls.tot" + suff)
-tlsdata = LF.CleanData(tlsdata)
-tlsdata = LF.RemoveOutliers(tlsdata)
-print tlsdata.shape
-#tlsdata = LF.RemoveDuplicates(tlsdata)
-nPts = tlsdata.shape[0]
-tMatrix = np.linspace(minT,maxT, num = 100)
-omega = 2 * np.pi * freq
-density = nTLS / vol
-
-print np.mean(tlsdata[:, 7])
-
-#Import data
-tlsdata[:,5] = 1.0 / tlsdata[:,5] * 0.0101804979 * 1e-12
-tlsdata[:,6] = 1.0 / tlsdata[:,6] * 0.0101804979 * 1e-12
-if constG:
-    tlsdata[:,7] = np.mean(tlsdata[:, 7])
-    #tlsdata[:, 7] = 1.7
-if constY:
-    tlsdata[:, [9,10, 11]] = np.mean(tlsdata[:,[9,10, 11]])
-if constT:
-    tlsdata[:,5] = np.mean(tlsdata[:,5])
-    tlsdata[:,6] = np.mean(tlsdata[:,6])
-tlsdata[:,[9,10, 11]] = tlsdata[:,[9, 10, 11]] * 6.3227e-7
-
-shuffleIndices = [0,3,4,5,6,7,10]
+tlsdata, nPts = LF.CleanData(tlsdata, constG = constG, constY = constY, constT = constT)
 
 original = LF.calculateLossFunction(tlsdata, density, omega, tMatrix, BoltzmannCorrection = True)
 
-tlsProps = tlsdata[:,shuffleIndices]
-print tlsProps[2, :]
-tlsProps, ss = LF.trans(tlsProps, scale = True)
-print tlsProps[2, :]
-#kde = neighbors.KernelDensity(bandwidth = 0.008)
-#LF.CrossValidateKernel(tlsProps)
-bestBandwidth = LF.GridSearchKDE(tlsProps)
-kde = neighbors.KernelDensity(bandwidth = bestBandwidth)
-kde.fit(tlsProps)
+shuffleIndices = [0,3,4,5,6,7,10]
+tlskde = LF.tlsKDE()
+tlskde.fit(tlsdata, shuffleIndices, bandwidth = 0.186379686016)
+
 losses = []
-plt.hist(tlsProps[:,0], label = "Old Props", bins = 50)
 newtlsdata = np.copy(tlsdata)
-plt.hist(tlsdata[:,7], bins = 50, label = "Original")
 for bi in xrange(0, bSamples):
-    newProps = kde.sample(n_samples = nPts)
-    newtlsdata[:, shuffleIndices] = tlsProps[:]
-    newProps = LF.detrans(newProps, ss)
-    #newProps = LF.detrans(tlsProps)
-    print newProps[2, :]
-    newtlsdata[:, shuffleIndices] = newProps[:]
-    print "Working on the " + str(bi + 1) + " step of " + str(bSamples) + "."
+    print "Working on the {:d} step of {:d} ".format(bi + 1,bSamples)
+    newtlsdata[:, shuffleIndices] = tlskde.sample(nPts)
     losses.append(LF.calculateLossFunction(newtlsdata, density, omega, tMatrix, BoltzmannCorrection = True))
-    #plt.hist(newtlsdata[:,7], bins = 50, label = "Generated with KDE" + str(bi))
-    #plt.hist(newtlsdata[:,5], bins = 50, label = "Generated with KDE" + str(bi))
-    #plt.plot(tMatrix, losses[bi], label = "New Loss" + str(bi))
-#plt.legend()
-#plt.ylim([0,1])
-#plt.xlim([1e-15, 1e-14])
+
 lLoss, uLoss = LF.CalcConfidenceInterval(original, losses, saveDistros = True, percentiles = percentiles)
 if plotLoss:
-    plt.plot(tMatrix, originalLoss, color = 'blue', label = "Calculated Loss")
-    plt.plot(tMatrix, lLoss, color = 'orange', label = "95% Confidence Interval", lw = 2, ls = '--')
-    plt.plot(tMatrix, uLoss, color = 'orange', lw = 2, ls = '--')
-    plt.legend()
-    plt.ylim([0.0, 1.0])
-    plt.show()
+    LF.plotLoss(tMatrix, original, lLoss, uLoss)
 if saveLoss:
-    prntMat = np.empty([tMatrix.shape[0], 4])
-    prntMat[:, 0] = tMatrix[:]
-    prntMat[:, 1] = original[:]
-    prntMat[:, 2] = lLoss[:]
-    prntMat[:, 3] = uLoss[:]
-    np.savetxt(saveLoss, prntMat)
+    LF.saveLoss(tMatrix, original, lLoss, uLoss, saveLoss)

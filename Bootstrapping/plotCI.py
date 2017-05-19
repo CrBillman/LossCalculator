@@ -25,9 +25,7 @@ poly = 3
 
 cMatrix = np.loadtxt("Q_Percentiles50.dat")
 for dim in xrange(1,4):
-    print cMatrix[:, dim]
     cMatrix[:, dim] = savgol_filter(cMatrix[:,dim], window, poly)
-    print cMatrix[:, dim]
 cMatrix[:, [1, 2, 3]] = cMatrix[:, [1, 2, 3]] * scale
 expMatrix = np.loadtxt("Exp.dat")
 expMatrix[:, 1] = expMatrix[:, 1] * 1e3
