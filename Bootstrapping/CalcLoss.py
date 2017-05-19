@@ -28,7 +28,7 @@ mpl.rcParams['axes.titleweight'] = 'bold'
 plotLoss = False
 bSamples = 100
 percentiles = True
-saveLoss = "Q_Percentiles100.dat"
+saveLoss = "Q_Percentiles50.dat"
 plotConvergence = False
 plotDelta = False
 plotV = False
@@ -62,6 +62,7 @@ else:
     suff = ""
 
 tlsdata = np.loadtxt("pp-tls.tot" + suff)
+tlsdata = LF.CleanData(tlsdata)
 tlsdata = LF.RemoveOutliers(tlsdata)
 print tlsdata.shape
 #tlsdata = LF.RemoveDuplicates(tlsdata)
@@ -85,14 +86,18 @@ if constT:
     tlsdata[:,6] = np.mean(tlsdata[:,6])
 tlsdata[:,[9,10, 11]] = tlsdata[:,[9, 10, 11]] * 6.3227e-7
 
+shuffleIndices = [0,3,4,5,6,7,10]
+
 original = LF.calculateLossFunction(tlsdata, density, omega, tMatrix, BoltzmannCorrection = True)
 
-tlsProps = tlsdata[:,[0,1,5,6,7,10]]
+tlsProps = tlsdata[:,shuffleIndices]
 print tlsProps[2, :]
-tlsProps = LF.trans(tlsProps)
+tlsProps, ss = LF.trans(tlsProps, scale = True)
 print tlsProps[2, :]
 #kde = neighbors.KernelDensity(bandwidth = 0.008)
-kde = neighbors.KernelDensity(bandwidth = 0.0001)
+#LF.CrossValidateKernel(tlsProps)
+bestBandwidth = LF.GridSearchKDE(tlsProps)
+kde = neighbors.KernelDensity(bandwidth = bestBandwidth)
 kde.fit(tlsProps)
 losses = []
 plt.hist(tlsProps[:,0], label = "Old Props", bins = 50)
@@ -100,11 +105,11 @@ newtlsdata = np.copy(tlsdata)
 plt.hist(tlsdata[:,7], bins = 50, label = "Original")
 for bi in xrange(0, bSamples):
     newProps = kde.sample(n_samples = nPts)
-    newtlsdata[:,[0,1,5,6,7,10]] = tlsProps[:]
-    newProps = LF.detrans(newProps)
+    newtlsdata[:, shuffleIndices] = tlsProps[:]
+    newProps = LF.detrans(newProps, ss)
     #newProps = LF.detrans(tlsProps)
     print newProps[2, :]
-    newtlsdata[:,[0,1,5,6,7,10]] = newProps[:]
+    newtlsdata[:, shuffleIndices] = newProps[:]
     print "Working on the " + str(bi + 1) + " step of " + str(bSamples) + "."
     losses.append(LF.calculateLossFunction(newtlsdata, density, omega, tMatrix, BoltzmannCorrection = True))
     #plt.hist(newtlsdata[:,7], bins = 50, label = "Generated with KDE" + str(bi))
@@ -113,9 +118,9 @@ for bi in xrange(0, bSamples):
 #plt.legend()
 #plt.ylim([0,1])
 #plt.xlim([1e-15, 1e-14])
-lLoss, avLoss, uLoss = LF.CalcConfidenceInterval(original, losses, saveDistros = True, percentiles = percentiles)
+lLoss, uLoss = LF.CalcConfidenceInterval(original, losses, saveDistros = True, percentiles = percentiles)
 if plotLoss:
-    plt.plot(tMatrix, avLoss, color = 'blue', label = "Calculated Loss")
+    plt.plot(tMatrix, originalLoss, color = 'blue', label = "Calculated Loss")
     plt.plot(tMatrix, lLoss, color = 'orange', label = "95% Confidence Interval", lw = 2, ls = '--')
     plt.plot(tMatrix, uLoss, color = 'orange', lw = 2, ls = '--')
     plt.legend()
@@ -124,7 +129,7 @@ if plotLoss:
 if saveLoss:
     prntMat = np.empty([tMatrix.shape[0], 4])
     prntMat[:, 0] = tMatrix[:]
-    prntMat[:, 1] = avLoss[:]
+    prntMat[:, 1] = original[:]
     prntMat[:, 2] = lLoss[:]
     prntMat[:, 3] = uLoss[:]
     np.savetxt(saveLoss, prntMat)
