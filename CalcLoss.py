@@ -62,7 +62,7 @@ else:
     suff = ""
 
 
-tlsdata = np.loadtxt("pp-tls.tot" + suff)
+tlsdata = np.loadtxt("Data/pp-tls.tot" + suff)
 tlsdata, nPts = LF.CleanData(tlsdata, constG = constG, constY = constY, constT = constT)
 
 original = LF.calculateLossFunction(tlsdata, density, omega, tMatrix, BoltzmannCorrection = BoltzmannCorrection)
