@@ -114,6 +114,18 @@ def RemoveDuplicates(data):
             #print data[i, :]
     return np.matrix(noDups)
 
+def ImportData(fn):
+    inStream = open(fn, 'r')
+    data = []
+    while True:
+        line = inStream.readline()
+        if not line:
+            break
+        row = line.split()
+        if len(row) == 12:
+            data.append(map(float, row))
+    return np.array(data)
+
 def CleanData(data, constG = False, constY = False, constT = False, BoltzmannCorrection = True):
     data = RemoveOutliers(data)
     nPts = data.shape[0]
