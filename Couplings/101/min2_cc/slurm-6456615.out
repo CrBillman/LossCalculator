@@ -1,3 +1,0 @@
-slurmstepd: execve(): /home/chrisrbillman/relax_coupling_constant/dlpoly2014.X-mpi: No such file or directory
-srun: error: c25b-s7: task 0: Exited with exit code 2
-Done.
